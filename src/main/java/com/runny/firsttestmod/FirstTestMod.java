@@ -1,6 +1,9 @@
 package com.runny.firsttestmod;
 
 import com.mojang.logging.LogUtils;
+import com.runny.firsttestmod.item.ModCreativeModTabs;
+import com.runny.firsttestmod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -22,6 +25,9 @@ public class FirstTestMod {
     public FirstTestMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModTabs.register(modEventBus);
+        ModItems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -34,7 +40,11 @@ public class FirstTestMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+//        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+//            event.accept(ModItems.CUP);
+//            event.accept(ModItems.CUPWITHTEA);
+//            event.accept(ModItems.TEABAG);
+//        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
