@@ -34,8 +34,8 @@ growing a tea tree and converting dried leaves into tea will be added. Currently
 
 
 ## Blocks
-- Block of fresh tea"
-- Block of dry tea
+- Block of fresh tea leaf
+- Block of dry tea leaf
 - Log of tea tree
 
 
