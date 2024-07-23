@@ -14,7 +14,7 @@
 - Древесина чайного дерева
 
 
-##Предметы:
+## Предметы
 - Чайный пакетик
 - Чашка
 - Чашка чая
@@ -33,13 +33,13 @@ This is an educational mod for learning mod building in minecraft. At the moment
 growing a tea tree and converting dried leaves into tea will be added. Currently present: <br>
 
 
-## Блоки
+## Blocks
 - Block of fresh tea"
 - Block of dry tea
 - Log of tea tree
 
 
-##Предметы:
+## Items
 - Tea bag
 - Cup
 - Cup of tea
