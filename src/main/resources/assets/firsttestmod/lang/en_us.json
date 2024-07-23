@@ -4,6 +4,8 @@
   "item.firsttestmod.teabag": "Teabag",
 
   "block.firsttestmod.freshtea_block": "Block of fresh tea",
+  "block.firsttestmod.drytea_block": "Block of dry tea",
+  "block.firsttestmod.teatree_log": "Log of tea tree",
 
   "creativetab.firstmod_tab": "Tea mod from Runny"
 }

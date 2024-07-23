@@ -14,7 +14,7 @@ public class ModCreativeModTabs {
     public  static  final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FirstTestMod.mod_id);
 
-    public  static  final RegistryObject<CreativeModeTab> FIRSTMOD_TAB = CREATIVE_MODE_TAB.register("firstmod_tab",
+    public  static  final RegistryObject<CreativeModeTab> FIRSTMOD_TAB = CREATIVE_MODE_TAB.register("firstmod_tab", // Создал собственную вкладку в меню креатива
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CUPWITHTEA.get()))
                     .title(Component.translatable("creativetab.firstmod_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
@@ -23,6 +23,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.TEABAG.get());
 
                         output.accept(ModBlock.FRESHTEA_BLOCK.get());
+                        output.accept(ModBlock.DEYTEA_BLOCK.get());
+                        output.accept(ModBlock.TEATREE_LOG.get());
                     })
                     .build());
 

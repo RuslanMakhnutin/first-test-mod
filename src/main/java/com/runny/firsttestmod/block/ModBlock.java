@@ -18,8 +18,12 @@ public class ModBlock {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, FirstTestMod.mod_id);
 
-    public static final RegistryObject<Block> FRESHTEA_BLOCK = registryBlock("freshtea_block",
+    public static final RegistryObject<Block> FRESHTEA_BLOCK = registryBlock("freshtea_block", // Создал блок свежей чайной листвы
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SPRUCE_LEAVES)));
+    public static final RegistryObject<Block> DEYTEA_BLOCK = registryBlock("drytea_block", // Создал блок высушенной чайной листвы
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SPRUCE_LEAVES)));
+    public static final RegistryObject<Block> TEATREE_LOG = registryBlock("teatree_log", // Создал блок высушенной чайной листвы
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BAMBOO_PLANKS)));
 
 
     private  static  <T extends Block> RegistryObject<T> registryBlock(String name, Supplier<T> block) {
