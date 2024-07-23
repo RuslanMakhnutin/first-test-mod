@@ -1,0 +1,11 @@
+{
+  "item.firsttestmod.cup": "Чашка",
+  "item.firsttestmod.cupwithtea": "Чашка чая",
+  "item.firsttestmod.teabag": "Чайный пакетик",
+
+  "block.firsttestmod.freshtea_block": "Блок свежей чайной листвы",
+  "block.firsttestmod.drytea_block": "Блок высушенной чайной листвы",
+  "block.firsttestmod.teatree_log": "Бревно чайного дерева",
+
+  "creativetab.firstmod_tab": "Чайный мод от Runny"
+}
