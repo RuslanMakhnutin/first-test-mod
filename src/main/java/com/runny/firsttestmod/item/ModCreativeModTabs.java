@@ -1,6 +1,7 @@
 package com.runny.firsttestmod.item;
 
 import com.runny.firsttestmod.FirstTestMod;
+import com.runny.firsttestmod.block.ModBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,6 +21,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.CUPWITHTEA.get());
                         output.accept(ModItems.CUP.get());
                         output.accept(ModItems.TEABAG.get());
+
+                        output.accept(ModBlock.FRESHTEA_BLOCK.get());
                     })
                     .build());
 

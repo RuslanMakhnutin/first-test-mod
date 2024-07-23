@@ -1,6 +1,7 @@
 package com.runny.firsttestmod;
 
 import com.mojang.logging.LogUtils;
+import com.runny.firsttestmod.block.ModBlock;
 import com.runny.firsttestmod.item.ModCreativeModTabs;
 import com.runny.firsttestmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -27,6 +28,7 @@ public class FirstTestMod {
 
         ModCreativeModTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlock.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
