@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category" : "misc",
+  "key": {
+    "*": {
+      "item": "firsttestmod:drytea_leaf"
+    },
+    "/": {
+      "item": "minecraft:string"
+    },
+    "#": {
+      "item": "minecraft:paper"
+    }
+  },
+  "pattern": [
+      "/",
+      "*",
+      "#"
+  ],
+  "result": {
+    "item": "firsttestmod:teabag"
+  }
+}

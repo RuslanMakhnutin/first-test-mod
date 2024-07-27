@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category" : "misc",
+  "key": {
+    "*": {
+      "item": "firsttestmod:hotwater_bucket"
+    },
+    "/": {
+      "item": "firsttestmod:teabag"
+    },
+    "#": {
+      "item": "firsttestmod:cup"
+    }
+  },
+  "pattern": [
+      "/",
+      "*",
+      "#"
+  ],
+  "result": {
+    "item": "firsttestmod:cupwithtea"
+  }
+}

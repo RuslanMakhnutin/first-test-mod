@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category" : "misc",
+  "key": {
+    "#": {
+      "item": "firsttestmod:dryhtea_leaf"
+    }
+  },
+  "pattern": [
+      "##",
+      "##"
+  ],
+  "result": {
+    "item": "firsttestmod:drytea_block"
+  }
+}

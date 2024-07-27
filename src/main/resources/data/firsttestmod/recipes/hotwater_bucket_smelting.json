@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 50,
+  "ingredient": {
+    "item": "minecraft:water_bucket"
+  },
+  "result": "firsttestmod:hotwater_bucket"
+}

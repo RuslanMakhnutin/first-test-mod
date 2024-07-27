@@ -23,6 +23,8 @@ public class ModItems {
             () ->new Item(new Item.Properties()));
     public  static  final  RegistryObject<Item> FRESHTEALEAF = ITEMS.register("freshtea_leaf",
             () ->new Item(new Item.Properties()));
+    public  static  final  RegistryObject<Item> HOTWATERBUCKET = ITEMS.register("hotwater_bucket",
+            () ->new Item(new Item.Properties()));
 
     public  static  void register(IEventBus eventBus){
         ITEMS.register(eventBus);
