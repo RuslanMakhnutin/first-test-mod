@@ -26,8 +26,11 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.HOTWATERBUCKET.get());
 
                         output.accept(ModBlock.FRESHTEA_BLOCK.get());
-                        output.accept(ModBlock.DEYTEA_BLOCK.get());
+                        output.accept(ModBlock.DRYTEA_BLOCK.get());
                         output.accept(ModBlock.TEATREE_LOG.get());
+                        output.accept(ModBlock.TEATREE_WOOD.get());
+                        output.accept(ModBlock.STRIPPED_TEATREE_LOG.get());
+                        output.accept(ModBlock.STRIPPED_TEATREE_WOOD.get());
                     })
                     .build());
 

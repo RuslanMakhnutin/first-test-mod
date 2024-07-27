@@ -9,6 +9,9 @@
   "block.firsttestmod.freshtea_block": "Блок свежей чайной листвы",
   "block.firsttestmod.drytea_block": "Блок высушенной чайной листвы",
   "block.firsttestmod.teatree_log": "Бревно чайного дерева",
+  "block.firsttestmod.teatree_wood": "Древесина чайного дерева",
+  "block.firsttestmod.stripped_teatree_log": "Обтёсанное бревно чайного дерева",
+  "block.firsttestmod.stripped_teatree_wood": "Обтёсанная древесина чайного дерева",
 
   "creativetab.firstmod_tab": "Чайный мод от Runny"
 }

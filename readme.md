@@ -8,6 +8,9 @@
 - Блок свежего чайного листа
 - Блок высушенного чайного листа
 - Древесина чайного дерева
+- Обтёсанная древесина чайного дерева
+- Бревно чайного дерева
+- Обтёсанное бревно чайного дерева
 ## Предметы
 - Чайный пакетик
 - Чашка
@@ -33,7 +36,10 @@ The mod adds:
 ## Blocks
 - Block of fresh tea leaf
 - Block of dry tea leaf
+- Wood of tea tree
+- Stripped wood of tea tree
 - Log of tea tree
+- Stripped log of tea tree
 ## Items
 - Tea bag
 - Cup

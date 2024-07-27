@@ -1,7 +1,7 @@
 {
   "variants": {
-   "": {
-     "model": "firsttestmod:block/teatree_log"
-   }
+    "": {
+      "model": "firsttestmod:block/teatree_log"
+    }
   }
 }
