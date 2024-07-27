@@ -19,6 +19,10 @@ public class ModItems {
 
     public  static  final RegistryObject<Item> TEABAG = ITEMS.register("teabag", // Создал предмет чайного пакетика
             () ->new Item(new Item.Properties()));
+    public  static  final  RegistryObject<Item> DRYTEALEAF = ITEMS.register("drytea_leaf",
+            () ->new Item(new Item.Properties()));
+    public  static  final  RegistryObject<Item> FRESHTEALEAF = ITEMS.register("freshtea_leaf",
+            () ->new Item(new Item.Properties()));
 
     public  static  void register(IEventBus eventBus){
         ITEMS.register(eventBus);

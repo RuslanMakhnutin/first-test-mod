@@ -21,6 +21,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.CUPWITHTEA.get());
                         output.accept(ModItems.CUP.get());
                         output.accept(ModItems.TEABAG.get());
+                        output.accept(ModItems.DRYTEALEAF.get());
+                        output.accept(ModItems.FRESHTEALEAF.get());
 
                         output.accept(ModBlock.FRESHTEA_BLOCK.get());
                         output.accept(ModBlock.DEYTEA_BLOCK.get());
