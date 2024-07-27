@@ -11,6 +11,8 @@
 - Обтёсанная древесина чайного дерева
 - Бревно чайного дерева
 - Обтёсанное бревно чайного дерева
+- Руда чайного камня
+- Блок чайного камня
 ## Предметы
 - Чайный пакетик
 - Чашка
@@ -40,6 +42,8 @@ The mod adds:
 - Stripped wood of tea tree
 - Log of tea tree
 - Stripped log of tea tree
+- Tea-stone ore
+- Tea-stone block
 ## Items
 - Tea bag
 - Cup

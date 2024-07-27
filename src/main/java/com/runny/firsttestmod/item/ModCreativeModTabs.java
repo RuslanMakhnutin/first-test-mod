@@ -31,6 +31,8 @@ public class ModCreativeModTabs {
                         output.accept(ModBlock.TEATREE_WOOD.get());
                         output.accept(ModBlock.STRIPPED_TEATREE_LOG.get());
                         output.accept(ModBlock.STRIPPED_TEATREE_WOOD.get());
+                        output.accept(ModBlock.TEASTONE_ORE.get());
+                        output.accept(ModBlock.TEASTONE_BLOCK.get());
                     })
                     .build());
 
