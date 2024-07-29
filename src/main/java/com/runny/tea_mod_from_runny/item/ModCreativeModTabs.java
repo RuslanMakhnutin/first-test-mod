@@ -51,8 +51,8 @@ public class ModCreativeModTabs {
                         output.accept(ModBlock.STRIPPED_TEA_TREE_WOOD.get());
 
                         // Leaves
-                        output.accept(ModBlock.FRESH_TEA_BLOCK.get());
-                        output.accept(ModBlock.DRY_TEA_BLOCK.get());
+                        output.accept(ModBlock.TEA_LEAVES.get());
+                        output.accept(ModBlock.DRY_TEA_LEAVES.get());
 
                         // Ore
                         output.accept(ModBlock.TEA_STONE_ORE.get());
@@ -62,6 +62,14 @@ public class ModCreativeModTabs {
 
                         // Saplings
                         output.accept(ModBlock.TEA_TREE_SAPLING.get());
+
+                        // Tools
+                        output.accept(ModItems.WOODEN_TEA_CUTTER.get());
+                        output.accept(ModItems.STONE_TEA_CUTTER.get());
+                        output.accept(ModItems.IRON_TEA_CUTTER.get());
+                        output.accept(ModItems.GOLDEN_TEA_CUTTER.get());
+                        output.accept(ModItems.DIAMOND_TEA_CUTTER.get());
+                        output.accept(ModItems.NETHERITE_TEA_CUTTER.get());
                     })
                     .build());
 

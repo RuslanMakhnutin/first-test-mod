@@ -20,9 +20,9 @@ public class ModBlock {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, TeaModFromRunny.mod_id);
 
-    public static final RegistryObject<Block> FRESH_TEA_BLOCK = registryBlock("tea_leaves", // Add - Fresh tea leaves
+    public static final RegistryObject<Block> TEA_LEAVES = registryBlock("tea_leaves", // Add - Fresh tea leaves
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
-    public static final RegistryObject<Block> DRY_TEA_BLOCK = registryBlock("dry_tea_leaves", // Add - Dry tea leaves
+    public static final RegistryObject<Block> DRY_TEA_LEAVES = registryBlock("dry_tea_leaves", // Add - Dry tea leaves
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DRIED_KELP_BLOCK)));
     public static final RegistryObject<Block> TEA_TREE_LOG = registryBlock("tea_tree_log", // Add - Tea tree log
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));

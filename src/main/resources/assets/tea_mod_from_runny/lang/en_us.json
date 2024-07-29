@@ -30,5 +30,12 @@
   "block.tea_mod_from_runny.tea_stone_block": "Tea-stone block",
   "block.tea_mod_from_runny.tea_tree_sapling": "Tea tree sapling",
 
+  "item.tea_mod_from_runny.wooden_tea_cutter": "Wooden tea-cutter",
+  "item.tea_mod_from_runny.stone_tea_cutter": "Stone tea-cutter",
+  "item.tea_mod_from_runny.iron_tea_cutter": "Iron tea-cutter",
+  "item.tea_mod_from_runny.golden_tea_cutter": "Golden tea-cutter",
+  "item.tea_mod_from_runny.diamond_tea_cutter": "Diamond tea-cutter",
+  "item.tea_mod_from_runny.netherite_tea_cutter": "Netherite tea-cutter",
+
   "creativetab.tea_mod_from_runny": "Tea mod from Runny"
 }

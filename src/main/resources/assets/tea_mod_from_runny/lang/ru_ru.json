@@ -30,5 +30,12 @@
   "block.tea_mod_from_runny.tea_stone_block": "Чайно-каменный блок",
   "block.tea_mod_from_runny.tea_tree_sapling": "Саженец чайно-дерева",
 
+  "item.tea_mod_from_runny.wooden_tea_cutter": "Деревянный чайный-нож",
+  "item.tea_mod_from_runny.stone_tea_cutter": "Каменный чайный-нож",
+  "item.tea_mod_from_runny.iron_tea_cutter": "Железный чайный-нож",
+  "item.tea_mod_from_runny.golden_tea_cutter": "Золотой чайный-нож",
+  "item.tea_mod_from_runny.diamond_tea_cutter": "Алмазный чайный-нож",
+  "item.tea_mod_from_runny.netherite_tea_cutter": "Незеритовый чайный-ножr",
+
   "creativetab.tea_mod_from_runny": "Tea mod from Runny"
 }
