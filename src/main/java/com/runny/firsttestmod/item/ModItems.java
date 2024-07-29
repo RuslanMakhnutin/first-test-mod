@@ -25,6 +25,10 @@ public class ModItems {
             () ->new Item(new Item.Properties()));
     public  static  final  RegistryObject<Item> HOTWATERBUCKET = ITEMS.register("hotwater_bucket",
             () ->new Item(new Item.Properties()));
+    public  static  final  RegistryObject<Item> TEASTONE = ITEMS.register("teastone",
+            () ->new Item(new Item.Properties()));
+    public  static  final  RegistryObject<Item> EMPTY_TEA_POT = ITEMS.register("empty_tea_pot",
+            () ->new Item(new Item.Properties()));
 
     public  static  void register(IEventBus eventBus){
         ITEMS.register(eventBus);

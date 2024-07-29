@@ -34,8 +34,9 @@ public class ModBlock {
     public static final RegistryObject<Block> TEASTONE_ORE = registryBlock("teastone_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE)));
     public static final RegistryObject<Block> TEASTONE_BLOCK = registryBlock("teastone_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.STONE)));
-
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK)));
+    public static final RegistryObject<Block> TEA_TREE_SAPLING = registryBlock("tea_tree_sapling",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     private  static  <T extends Block> RegistryObject<T> registryBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

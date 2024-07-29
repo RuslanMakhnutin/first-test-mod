@@ -24,7 +24,10 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.DRYTEALEAF.get());
                         output.accept(ModItems.FRESHTEALEAF.get());
                         output.accept(ModItems.HOTWATERBUCKET.get());
+                        output.accept(ModItems.TEASTONE.get());
+                        output.accept(ModItems.EMPTY_TEA_POT.get());
 
+                        output.accept(ModBlock.TEA_TREE_SAPLING.get());
                         output.accept(ModBlock.FRESHTEA_BLOCK.get());
                         output.accept(ModBlock.DRYTEA_BLOCK.get());
                         output.accept(ModBlock.TEATREE_LOG.get());

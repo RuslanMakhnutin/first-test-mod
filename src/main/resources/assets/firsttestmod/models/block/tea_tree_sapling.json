@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "firsttestmod:block/tea_tree_sapling"
+  }
+}

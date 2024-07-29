@@ -5,7 +5,9 @@
   "item.firsttestmod.drytea_leaf": "Tea leaf - dry",
   "item.firsttestmod.freshtea_leaf": "Tea leaf - fresh",
   "item.firsttestmod.hotwater_bucket": "Bucket with hot water",
+  "item.firsttestmod.teastone": "Tea-stone",
 
+  "block.firsttestmod.tea_tree_sapling": "Tea tree sapling",
   "block.firsttestmod.freshtea_block": "Block of fresh tea leaf",
   "block.firsttestmod.drytea_block": "Block of dry tea leaf",
   "block.firsttestmod.teatree_log": "Log of tea tree",
