@@ -13,6 +13,7 @@
 - Обтёсанное бревно чайного дерева
 - Руда чайного камня
 - Блок чайного камня
+- Саженец чайного дерева
 
 ## Предметы
 - Свежий чайный лист
@@ -67,6 +68,7 @@ The mod adds:
 - Stripped log of tea tree
 - Tea-stone ore
 - Tea-stone block
+- Sapling of tea tree
 
 ## Items
 - Fresh tea leaf
