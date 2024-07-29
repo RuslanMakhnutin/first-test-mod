@@ -2,10 +2,12 @@ package com.runny.tea_mod_from_runny.block;
 
 import com.runny.tea_mod_from_runny.TeaModFromRunny;
 import com.runny.tea_mod_from_runny.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -30,12 +32,15 @@ public class ModBlock {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
     public static final RegistryObject<Block> STRIPPED_TEA_TREE_WOOD = registryBlock("stripped_tea_tree_wood", // Add - Stripped tea tree wood
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
-    public static final RegistryObject<Block> TEA_STONE_ORE = registryBlock("tea_stone_ore", // Add - Tea-stone ore
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE)));
-    public static final RegistryObject<Block> TEA_STONE_BLOCK = registryBlock("tea_stone_block", // Add - Tea-stone solid block
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK)));
     public static final RegistryObject<Block> TEA_TREE_SAPLING = registryBlock("tea_tree_sapling", // Add - Tea tree sapling
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> TEA_STONE_BLOCK = registryBlock("tea_stone_block", // Add - Tea-stone solid block
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> TEA_STONE_ORE = registryBlock("tea_stone_ore", // Add - Tea-stone ore
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).strength(2f).
+                    requiresCorrectToolForDrops(), UniformInt.of(2,5)));
+
+
 
     private  static  <T extends Block> RegistryObject<T> registryBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

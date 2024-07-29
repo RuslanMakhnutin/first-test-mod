@@ -14,7 +14,7 @@ public class ModCreativeModTabs {
     public  static  final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TeaModFromRunny.mod_id);
 
-    public  static  final RegistryObject<CreativeModeTab> TEA_MOD_FROM_RUNNY_TAB = CREATIVE_MODE_TAB.register("tea_mod_from_runny_tab", // Создал собственную вкладку в меню креатива
+    public  static  final RegistryObject<CreativeModeTab> TEA_MOD_FROM_RUNNY_TAB = CREATIVE_MODE_TAB.register("tea_mod_from_runny_tab", // Add creative-mode tab for Mod
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.EMPTY_TEA_POT.get()))
                     .title(Component.translatable("creativetab.tea_mod_from_runny"))
                     .displayItems((itemDisplayParameters, output) -> {
@@ -58,7 +58,6 @@ public class ModCreativeModTabs {
                         output.accept(ModBlock.TEA_STONE_ORE.get());
 
                         // Solid blocks
-
                         output.accept(ModBlock.TEA_STONE_BLOCK.get());
 
                         // Saplings
