@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category" : "misc",
+  "key": {
+    "#": {
+      "item": "tea_mod_from_runny:tea_stone"
+    }
+  },
+  "pattern": [
+      "###",
+      "###",
+      "###"
+  ],
+  "result": {
+    "item": "tea_mod_from_runny:tea_stone_block"
+  }
+}

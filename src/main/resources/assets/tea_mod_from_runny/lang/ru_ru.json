@@ -1,0 +1,34 @@
+{
+  "item.tea_mod_from_runny.fresh_tea_leaf": "Свежий чайный лист",
+  "item.tea_mod_from_runny.dry_tea_leaf": "Высушенный чайный лист",
+  "item.tea_mod_from_runny.tea_stone": "Чайно-камень",
+
+  "item.tea_mod_from_runny.cup": "Чашка",
+  "item.tea_mod_from_runny.cup_water": "Чашка с водой",
+  "item.tea_mod_from_runny.cup_classic_tea": "Чашка с классическим чаем",
+  "item.tea_mod_from_runny.cup_tea_stone_tea": "Чашка с чайно-каменным чаем",
+  "item.tea_mod_from_runny.cup_glow_berries_tea": "Чашка с чаем из светящихся ягод",
+  "item.tea_mod_from_runny.cup_sweet_berries_tea": "Чашка с чаем из сладких ягод",
+  "item.tea_mod_from_runny.cup_miner_tea": "Чай с \"Шахтерским\" чаем",
+
+  "item.tea_mod_from_runny.unfired_tea_pot": "Необоженный чайник",
+  "item.tea_mod_from_runny.empty_tea_pot": "Пустой чайник",
+  "item.tea_mod_from_runny.water_tea_pot": "Чайник с водой",
+  "item.tea_mod_from_runny.tea_pot_classic_tea": "Чайник с классическим чаем",
+  "item.tea_mod_from_runny.tea_pot_tea_stone_tea": "Чайник с чайно-каменным чаем",
+  "item.tea_mod_from_runny.tea_pot_glow_berries_tea": "Чайник с чаем из светящихся ягод",
+  "item.tea_mod_from_runny.tea_pot_sweet_berries_tea": "Чайник с чаем из сладких ягод",
+  "item.tea_mod_from_runny.tea_pot_miner_tea": "Чайник с \"Шахтерским\" чаем",
+
+  "block.tea_mod_from_runny.tea_tree_log": "Бревно чайно-дерева",
+  "block.tea_mod_from_runny.tea_tree_wood": "Древесина чайно-дерева",
+  "block.tea_mod_from_runny.stripped_tea_tree_log": "Обтесанное бревно чайно-дерево",
+  "block.tea_mod_from_runny.stripped_tea_tree_wood": "Обтесанное древесина чайно-дерева",
+  "block.tea_mod_from_runny.tea_leaves": "Чайная листва",
+  "block.tea_mod_from_runny.dry_tea_leaves": "Высушенная чайная листва",
+  "block.tea_mod_from_runny.tea_stone_ore": "Чайно-каменная руда",
+  "block.tea_mod_from_runny.tea_stone_block": "Чайно-каменный блок",
+  "block.tea_mod_from_runny.tea_tree_sapling": "Саженец чайно-дерева",
+
+  "creativetab.tea_mod_from_runny": "Tea mod from Runny"
+}

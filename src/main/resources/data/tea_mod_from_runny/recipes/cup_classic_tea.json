@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category" : "food",
+  "key": {
+    "*": {
+      "item": "tea_mod_from_runny:tea_pot_classic_tea"
+    },
+    "#": {
+      "item": "tea_mod_from_runny:cup"
+    }
+  },
+  "pattern": [
+      "###",
+      "#*#",
+      "###"
+  ],
+  "result": {
+    "item": "tea_mod_from_runny:cup_classic_tea",
+    "count": 8
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category" : "food",
+  "key": {
+    "*": {
+      "item": "tea_mod_from_runny:water_tea_pot"
+    },
+    "#": {
+      "item": "tea_mod_from_runny:cup"
+    }
+  },
+  "pattern": [
+      "###",
+      "#*#",
+      "###"
+  ],
+  "result": {
+    "item": "tea_mod_from_runny:cup_water",
+    "count": 8
+  }
+}

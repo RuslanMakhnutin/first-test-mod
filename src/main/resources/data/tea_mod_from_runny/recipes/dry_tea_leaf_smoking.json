@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "tea_mod_from_runny:tea_leaf"
+  },
+  "result": "tea_mod_from_runny:dry_tea_leaf"
+}

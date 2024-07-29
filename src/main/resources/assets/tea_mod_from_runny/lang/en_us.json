@@ -1,0 +1,34 @@
+{
+  "item.tea_mod_from_runny.fresh_tea_leaf": "Fresh tea leaf",
+  "item.tea_mod_from_runny.dry_tea_leaf": "Dry tea leaf",
+  "item.tea_mod_from_runny.tea_stone": "Tea-stone",
+
+  "item.tea_mod_from_runny.cup": "Cup",
+  "item.tea_mod_from_runny.cup_water": "Cup with water",
+  "item.tea_mod_from_runny.cup_classic_tea": "Cup with classic tea",
+  "item.tea_mod_from_runny.cup_tea_stone_tea": "Cup with tea-stone tea",
+  "item.tea_mod_from_runny.cup_glow_berries_tea": "Cup with glow berries tea",
+  "item.tea_mod_from_runny.cup_sweet_berries_tea": "Cup with sweet berries tea",
+  "item.tea_mod_from_runny.cup_miner_tea": "Cup with \"Miner\" tea",
+
+  "item.tea_mod_from_runny.unfired_tea_pot": "Unfired tea-pot",
+  "item.tea_mod_from_runny.empty_tea_pot": "Empty tea-pot",
+  "item.tea_mod_from_runny.water_tea_pot": "Tea-pot with water",
+  "item.tea_mod_from_runny.tea_pot_classic_tea": "Tea-pot with classic tea",
+  "item.tea_mod_from_runny.tea_pot_tea_stone_tea": "Tea-pot with tea-stone tea",
+  "item.tea_mod_from_runny.tea_pot_glow_berries_tea": "Tea-pot with glow berries tea",
+  "item.tea_mod_from_runny.tea_pot_sweet_berries_tea": "Tea-pot with sweet berries tea",
+  "item.tea_mod_from_runny.tea_pot_miner_tea": "Tea-pot with \"Miner\" tea",
+
+  "block.tea_mod_from_runny.tea_tree_log": "Tea tree log",
+  "block.tea_mod_from_runny.tea_tree_wood": "Tea tree wood",
+  "block.tea_mod_from_runny.stripped_tea_tree_log": "Stripped tea tree log",
+  "block.tea_mod_from_runny.stripped_tea_tree_wood": "Stripped tea tree wood",
+  "block.tea_mod_from_runny.tea_leaves": "Tea leaves",
+  "block.tea_mod_from_runny.dry_tea_leaves": "Dry tree leaves",
+  "block.tea_mod_from_runny.tea_stone_ore": "Tea-stone ore",
+  "block.tea_mod_from_runny.tea_stone_block": "Tea-stone block",
+  "block.tea_mod_from_runny.tea_tree_sapling": "Tea tree sapling",
+
+  "creativetab.tea_mod_from_runny": "Tea mod from Runny"
+}
