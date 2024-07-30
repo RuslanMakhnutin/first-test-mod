@@ -24,6 +24,7 @@
   "block.tea_mod_from_runny.tea_tree_wood": "Tea tree wood",
   "block.tea_mod_from_runny.stripped_tea_tree_log": "Stripped tea tree log",
   "block.tea_mod_from_runny.stripped_tea_tree_wood": "Stripped tea tree wood",
+  "block.tea_mod_from_runny.tea_tree_planks": "Tea tree planks",
   "block.tea_mod_from_runny.tea_leaves": "Tea leaves",
   "block.tea_mod_from_runny.dry_tea_leaves": "Dry tree leaves",
   "block.tea_mod_from_runny.tea_stone_ore": "Tea-stone ore",
@@ -38,6 +39,7 @@
   "item.tea_mod_from_runny.netherite_tea_cutter": "Netherite tea-cutter",
 
   "block.tea_mod_from_runny.test_block": "Block of testing",
+  "block.tea_mod_from_runny.sound_block": "Block of sound",
 
   "creativetab.tea_mod_from_runny": "Tea mod from Runny"
 }

@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients":[
     {
-      "item": "tea_mod_from_runny:tea_leaves"
+      "item": "tea_mod_from_runny:tea_tree_log"
     }
   ],
   "result": {
-    "item": "tea_mod_from_runny:fresh_tea_leaf",
+    "item": "tea_mod_from_runny:tea_tree_planks",
     "count": 4
   }
 }

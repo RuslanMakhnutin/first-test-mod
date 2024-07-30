@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category" : "food",
+  "key": {
+    "*": {
+      "item": "tea_mod_from_runny:dry_tea_leaf"
+    },
+    "#": {
+      "item": "tea_mod_from_runny:water_tea_pot"
+    },
+    "g": {
+      "item": "minecraft:glow_berries"
+    },
+    "s": {
+      "item": "minecraft:sweet_berries"
+    }
+  },
+  "pattern": [
+      "g#*",
+      " s "
+  ],
+  "result": {
+    "item": "tea_mod_from_runny:tea_pot_miner_tea"
+  }
+}

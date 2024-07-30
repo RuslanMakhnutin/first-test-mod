@@ -1,6 +1,7 @@
 package com.runny.tea_mod_from_runny.block;
 
 import com.runny.tea_mod_from_runny.TeaModFromRunny;
+import com.runny.tea_mod_from_runny.block.custom.SoundBlock;
 import com.runny.tea_mod_from_runny.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -37,10 +38,15 @@ public class ModBlock {
                     requiresCorrectToolForDrops(), UniformInt.of(2,5)));
     public static final RegistryObject<LeavesBlock> TEA_TREE_SAPLING = registryBlock("tea_tree_sapling", // Add - Tea tree sapling
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING).noOcclusion()));
+    public static final RegistryObject<Block> TEA_TREE_PLANKS = registryBlock("tea_tree_planks", // Add - Tea tree planks
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
 
     public static final RegistryObject<GlassBlock> TEST_BLOCK = registryBlock("test_block", // Add - Test block
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion()));
+
+    public static final RegistryObject<Block> SOUND_BLOCK = registryBlock("sound_block", // Add - Test block
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)));
 
 
 

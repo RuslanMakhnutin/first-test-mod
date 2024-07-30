@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category" : "food",
+  "key": {
+    "*": {
+      "item": "tea_mod_from_runny:empty_tea_pot"
+    },
+    "#": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "pattern": [
+      "#*"
+  ],
+  "result": {
+    "item": "tea_mod_from_runny:water_tea_pot"
+  }
+}

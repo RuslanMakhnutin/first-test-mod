@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category" : "food",
+  "key": {
+    "*": {
+      "item": "tea_mod_from_runny:dry_tea_leaf"
+    },
+    "#": {
+      "item": "tea_mod_from_runny:water_tea_pot"
+    }
+  },
+  "pattern": [
+      "#*"
+  ],
+  "result": {
+    "item": "tea_mod_from_runny:tea_pot_classic_tea"
+  }
+}

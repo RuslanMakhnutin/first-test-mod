@@ -49,6 +49,7 @@ public class ModCreativeModTabs {
                         output.accept(ModBlock.TEA_TREE_WOOD.get());
                         output.accept(ModBlock.STRIPPED_TEA_TREE_LOG.get());
                         output.accept(ModBlock.STRIPPED_TEA_TREE_WOOD.get());
+                        output.accept(ModBlock.TEA_TREE_PLANKS.get());
 
                         // Leaves
                         output.accept(ModBlock.TEA_LEAVES.get());
@@ -73,6 +74,8 @@ public class ModCreativeModTabs {
 
                         // Test
                         output.accept(ModBlock.TEST_BLOCK.get());
+                        output.accept(ModBlock.SOUND_BLOCK.get());
+
                     })
                     .build());
 
