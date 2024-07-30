@@ -1,5 +1,6 @@
 package com.runny.tea_mod_from_runny.item.custom;
 
+import com.runny.tea_mod_from_runny.util.ModTags;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.Tag;
@@ -37,7 +38,7 @@ public class TestToolItem extends Item {
 
             }
             if (!foundBlock){
-                player.sendSystemMessage(Component.literal("Железовое не найдено, увы :с"));
+                player.sendSystemMessage(Component.literal("Руды не найдено, увы :с"));
             }
         }
 
@@ -54,6 +55,6 @@ public class TestToolItem extends Item {
     }
 
     private boolean isValuableBlock(BlockState state) {
-        return state.is(Blocks.IRON_ORE);
+        return state.is(ModTags.Blocks.TEST_TOOL_VALUABLES);
     }
 }

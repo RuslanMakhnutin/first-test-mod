@@ -3,7 +3,7 @@
   "category" : "food",
   "key": {
     "*": {
-      "item": "tea_mod_from_runny:dry_tea_leaf"
+      "tag": "tea_mod_from_runny:tea_base_ingredient"
     },
     "#": {
       "item": "tea_mod_from_runny:water_tea_pot"

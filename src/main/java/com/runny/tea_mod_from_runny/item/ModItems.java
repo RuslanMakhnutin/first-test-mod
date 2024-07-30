@@ -1,8 +1,10 @@
 package com.runny.tea_mod_from_runny.item;
 
 import com.runny.tea_mod_from_runny.TeaModFromRunny;
+import com.runny.tea_mod_from_runny.item.custom.FuelItem;
 import com.runny.tea_mod_from_runny.item.custom.ModFood;
 import com.runny.tea_mod_from_runny.item.custom.TeaCutterItem;
+import com.runny.tea_mod_from_runny.item.custom.TestToolItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -68,6 +70,14 @@ public class ModItems {
             () ->new TeaCutterItem(new Item.Properties().stacksTo(1).durability(1561)));
     public  static  final  RegistryObject<Item> NETHERITE_TEA_CUTTER = ITEMS.register("netherite_tea_cutter", // Add netherite tea-cutter
             () ->new TeaCutterItem(new Item.Properties().stacksTo(1).durability(2031)));
+
+    // Fuel
+    public  static  final  RegistryObject<Item> TEA_SLUG = ITEMS.register("tea_slag", // Add tea-slag fuel
+            () ->new FuelItem(new Item.Properties(), 100));
+
+    // Test
+    public  static  final  RegistryObject<Item> TEST_TOOL = ITEMS.register("test_tool", // Add - test-tool
+            () ->new TestToolItem(new Item.Properties().stacksTo(1)));
 
     public  static  void register(IEventBus eventBus){
         ITEMS.register(eventBus);

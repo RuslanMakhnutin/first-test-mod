@@ -23,6 +23,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.FRESH_TEA_LEAF.get());
                         output.accept(ModItems.DRY_TEA_LEAF.get());
                         output.accept(ModItems.TEA_STONE.get());
+                        output.accept(ModItems.TEA_SLUG.get());
 
                         // Cups
                         output.accept(ModItems.CUP.get());
@@ -73,6 +74,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.NETHERITE_TEA_CUTTER.get());
 
                         // Test
+                        output.accept(ModItems.TEST_TOOL.get());
                         output.accept(ModBlock.TEST_BLOCK.get());
                         output.accept(ModBlock.SOUND_BLOCK.get());
 
