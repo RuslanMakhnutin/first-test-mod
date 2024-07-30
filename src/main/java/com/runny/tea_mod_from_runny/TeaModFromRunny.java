@@ -4,6 +4,8 @@ import com.mojang.logging.LogUtils;
 import com.runny.tea_mod_from_runny.block.ModBlock;
 import com.runny.tea_mod_from_runny.item.ModCreativeModTabs;
 import com.runny.tea_mod_from_runny.item.ModItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -36,7 +38,7 @@ public class TeaModFromRunny {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        ItemBlockRenderTypes.setRenderLayer(ModBlock.TEST_BLOCK.get(), RenderType.translucent()); // For test-bock glass
     }
 
     // Add the example block item to the building blocks tab

@@ -5,6 +5,7 @@ import com.runny.tea_mod_from_runny.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -12,6 +13,8 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.items.ItemHandlerHelper;
+
 import java.util.Random;
 
 public class TeaCutterItem extends Item {
@@ -21,6 +24,7 @@ public class TeaCutterItem extends Item {
 
     Random rand = new Random();
     int count;
+
 
     @Override
     public InteractionResult useOn(UseOnContext pContext) {
@@ -35,8 +39,8 @@ public class TeaCutterItem extends Item {
                 if (isTeaLeaves(state)){
                     foundBlock = true;
                     player.sendSystemMessage(Component.literal("You have received " + count + " leaves of tea!"));
-                    player.addItem(new ItemStack(ModItems.FRESH_TEA_LEAF.get(), count));
-
+                    ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(ModItems.FRESH_TEA_LEAF.get(), count));
+                    lvl.destroyBlock(posClicked.below(),true);
                 }
                 if (!foundBlock){
                 player.sendSystemMessage(Component.literal("This is not tea!"));

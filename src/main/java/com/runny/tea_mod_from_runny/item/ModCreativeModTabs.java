@@ -70,6 +70,9 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.GOLDEN_TEA_CUTTER.get());
                         output.accept(ModItems.DIAMOND_TEA_CUTTER.get());
                         output.accept(ModItems.NETHERITE_TEA_CUTTER.get());
+
+                        // Test
+                        output.accept(ModBlock.TEST_BLOCK.get());
                     })
                     .build());
 
