@@ -13,6 +13,7 @@
 - Обтёсанное бревно чайного дерева
 - Руда чайного камня
 - Блок чайного камня
+- Саженец чайного дерева
 
 ## Предметы
 - Свежий чайный лист
@@ -43,8 +44,6 @@
 
 ## Механики
 - Сушка свежих листьев чая при помощи Печи, Коптильни и Костра
-- Создание ведра горячей воды в Печи
-- Создание чайного пакетика
 - Создание чашки
 - Создание чашек с различными видами чая
 - Срезание чайных листов с листвы при помощи чайного ножа
@@ -67,6 +66,7 @@ The mod adds:
 - Stripped log of tea tree
 - Tea-stone ore
 - Tea-stone block
+- Sapling of tea tree
 
 ## Items
 - Fresh tea leaf
@@ -96,8 +96,6 @@ The mod adds:
 
 ## Mechanics
 - Drying of fresh tea leaves using an Furnace, Smoker and Campfire
-- Cooking a bucket with hot water in the Furnace
-- Crafting a tea bag
 - Crafting a cup
 - Crafting a cup with different tea
 - Cutting tea leaves from foliage with a tea-cutter
