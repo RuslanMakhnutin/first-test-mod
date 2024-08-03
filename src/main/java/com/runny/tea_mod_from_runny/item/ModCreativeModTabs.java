@@ -87,6 +87,7 @@ public class ModCreativeModTabs {
 
                         // Test
                         output.accept(ModItems.TEST_TOOL.get());
+                        output.accept(ModItems.SAPPHIRE_STAFF.get());
                         output.accept(ModBlock.TEST_BLOCK.get());
                         output.accept(ModBlock.SOUND_BLOCK.get());
 

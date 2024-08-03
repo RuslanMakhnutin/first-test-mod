@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "tea_mod_from_runny:item/cup_water_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "tea_mod_from_runny:item/cup_water_2d"
+    },
+    "ground": {
+      "parent": "tea_mod_from_runny:item/cup_water_2d"
+    },
+    "fixed": {
+      "parent": "tea_mod_from_runny:item/cup_water_2d"
+    }
+  }
+}

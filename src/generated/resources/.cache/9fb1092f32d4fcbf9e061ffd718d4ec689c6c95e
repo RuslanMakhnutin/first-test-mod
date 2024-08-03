@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-03T18:59:20.0409864	Recipes
+// 1.20.1	2024-08-03T20:55:24.5652059	Recipes
 dc377cf448c93ab7e8bad29abcb7a39905077d47 data/tea_mod_from_runny/advancements/recipes/misc/cup.json
 8c8bdb805dabdda8ab8ae2916769c38a32d67568 data/tea_mod_from_runny/advancements/recipes/misc/cup_classic_tea.json
 3dee7efdce6e5e29870e29c1a1fd2ad60872552f data/tea_mod_from_runny/advancements/recipes/misc/cup_glow_berries_tea.json
@@ -50,7 +50,7 @@ fb13e6c614ba4eb6984ae65ab237950386732bd5 data/tea_mod_from_runny/recipes/tea_pla
 4cb211af2baf56c802d55911c6cd39d630c79f18 data/tea_mod_from_runny/recipes/tea_pot_miner_tea.json
 d699fc2e1df57d287d364b88fa1e1ea28bba6cb1 data/tea_mod_from_runny/recipes/tea_pot_sweet_berries_tea.json
 35676faefef484ccae6ffd00d61e7d887951a3d1 data/tea_mod_from_runny/recipes/tea_pot_tea_stone_tea.json
-705fb899d9dc47a18b6ef5520569a4d8a93f6253 data/tea_mod_from_runny/recipes/tea_pressure_plate.json
+1266ae15ce2bbcf97c7b67be06d8c7d8331a2a3f data/tea_mod_from_runny/recipes/tea_pressure_plate.json
 323125adaa46fae97a902676e9f81e1d81ac4552 data/tea_mod_from_runny/recipes/tea_stone.json
 bb032e5b944a7e0155d0c63ad311006b5abeca99 data/tea_mod_from_runny/recipes/tea_stone_block.json
 014750f6d98983b1ae05596e542a38686183aced data/tea_mod_from_runny/recipes/tea_stone_from_blasting_tea_stone.json

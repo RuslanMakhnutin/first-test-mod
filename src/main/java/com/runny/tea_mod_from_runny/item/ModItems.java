@@ -78,6 +78,8 @@ public class ModItems {
     // Test
     public  static  final  RegistryObject<Item> TEST_TOOL = ITEMS.register("test_tool", // Add - test-tool
             () ->new TestToolItem(new Item.Properties().stacksTo(1)));
+    public  static  final  RegistryObject<Item> SAPPHIRE_STAFF = ITEMS.register("sapphire_staff", // Add - staff
+            () ->new Item(new Item.Properties().stacksTo(1)));
 
     public  static  void register(IEventBus eventBus){
         ITEMS.register(eventBus);

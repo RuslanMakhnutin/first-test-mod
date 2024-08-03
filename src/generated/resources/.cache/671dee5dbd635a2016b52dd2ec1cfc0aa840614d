@@ -1,11 +1,4 @@
-// 1.20.1	2024-08-03T18:30:28.2947547	Item Models: tea_mod_from_runny
-5615235cd3015cd29a90cdde94235f3093d06928 assets/tea_mod_from_runny/models/item/cup.json
-d4676af77a104bd1677efcc811a4d20e31a420a2 assets/tea_mod_from_runny/models/item/cup_classic_tea.json
-e138dfbec0caaab32ea7663219cb33f5a559a965 assets/tea_mod_from_runny/models/item/cup_glow_berries_tea.json
-9b52d11e8803d635e8de21e2f08744f9cd3d5873 assets/tea_mod_from_runny/models/item/cup_miner_tea.json
-8194fd6ae0be6fa0dec87b8c97e3588578dc00d6 assets/tea_mod_from_runny/models/item/cup_sweet_berries_tea.json
-d7b76c409ca16694949cf427fcd90eff2a6d2dd8 assets/tea_mod_from_runny/models/item/cup_tea_stone_tea.json
-431ff663ab496235236e98ba90c35c0994a79790 assets/tea_mod_from_runny/models/item/cup_water.json
+// 1.20.1	2024-08-03T21:44:09.481376	Item Models: tea_mod_from_runny
 2f7ae8f63c674708219bf380a59ad327e7ce0d85 assets/tea_mod_from_runny/models/item/diamond_tea_cutter.json
 fe278bf9d0b6836bad527ba85c965b4ef5aa2236 assets/tea_mod_from_runny/models/item/dry_tea_leaf.json
 960b3086a8d433af6f961bf6721a3cbabee387e3 assets/tea_mod_from_runny/models/item/empty_tea_pot.json

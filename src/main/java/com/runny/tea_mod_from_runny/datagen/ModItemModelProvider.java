@@ -25,13 +25,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.DRY_TEA_LEAF);
         simpleItem(ModItems.FRESH_TEA_LEAF);
 
-        simpleItem(ModItems.CUP);
-        simpleItem(ModItems.CUP_WATER);
-        simpleItem(ModItems.CUP_CLASSIC_TEA);
-        simpleItem(ModItems.CUP_TEA_STONE_TEA);
-        simpleItem(ModItems.CUP_GLOW_BERRIES_TEA);
-        simpleItem(ModItems.CUP_SWEET_BERRIES_TEA);
-        simpleItem(ModItems.CUP_MINER_TEA);
+//        simpleItem(ModItems.CUP);
+//        simpleItem(ModItems.CUP_WATER);
+//        simpleItem(ModItems.CUP_CLASSIC_TEA);
+//        simpleItem(ModItems.CUP_TEA_STONE_TEA);
+//        simpleItem(ModItems.CUP_GLOW_BERRIES_TEA);
+//        simpleItem(ModItems.CUP_SWEET_BERRIES_TEA);
+//        simpleItem(ModItems.CUP_MINER_TEA);
 
         simpleItem(ModItems.UNFIRED_TEA_POT);
         simpleItem(ModItems.EMPTY_TEA_POT);
