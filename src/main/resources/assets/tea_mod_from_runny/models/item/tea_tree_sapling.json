@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "tea_mod_from_runny:block/tea_tree_sapling"
-  }
-}

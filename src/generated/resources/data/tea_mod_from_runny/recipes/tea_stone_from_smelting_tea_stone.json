@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "tea-stone",
+  "ingredient": {
+    "item": "tea_mod_from_runny:tea_stone"
+  },
+  "result": "tea_mod_from_runny:tea_stone"
+}

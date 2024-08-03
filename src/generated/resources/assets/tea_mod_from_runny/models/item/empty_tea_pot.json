@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tea_mod_from_runny:item/empty_tea_pot"
+  }
+}

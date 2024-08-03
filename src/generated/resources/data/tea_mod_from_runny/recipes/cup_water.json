@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "tea_mod_from_runny:cup"
+    },
+    "T": {
+      "item": "tea_mod_from_runny:water_tea_pot"
+    }
+  },
+  "pattern": [
+    "###",
+    "#T#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "tea_mod_from_runny:cup_water"
+  },
+  "show_notification": true
+}

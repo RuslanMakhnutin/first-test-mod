@@ -36,17 +36,18 @@ public class ModBlock {
     public static final RegistryObject<Block> TEA_STONE_ORE = registryBlock("tea_stone_ore", // Add - Tea-stone ore
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).strength(2f).
                     requiresCorrectToolForDrops(), UniformInt.of(2,5)));
-    public static final RegistryObject<LeavesBlock> TEA_TREE_SAPLING = registryBlock("tea_tree_sapling", // Add - Tea tree sapling
-            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING).noOcclusion()));
+    public static final RegistryObject<Block> TEA_TREE_SAPLING = registryBlock("tea_tree_sapling", // Add - Tea tree sapling
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING).noOcclusion()));
     public static final RegistryObject<Block> TEA_TREE_PLANKS = registryBlock("tea_tree_planks", // Add - Tea tree planks
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> TEA_SLAG_BLOCK = registryBlock("tea_slag_block", // Add - Tea slag block
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SAND)));
 
-
-    public static final RegistryObject<GlassBlock> TEST_BLOCK = registryBlock("test_block", // Add - Test block
-            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion()));
+    public static final RegistryObject<Block> TEST_BLOCK = registryBlock("test_block", // Add - Test block
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().noLootTable()));
 
     public static final RegistryObject<Block> SOUND_BLOCK = registryBlock("sound_block", // Add - Test block
-            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)));
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).noLootTable()));
 
 
 

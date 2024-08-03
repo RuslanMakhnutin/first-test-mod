@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "tea_mod_from_runny:water_tea_pot"
+    },
+    "G": {
+      "item": "minecraft:glow_berries"
+    },
+    "L": {
+      "tag": "tea_mod_from_runny:tea_base_ingredient"
+    },
+    "S": {
+      "item": "minecraft:sweet_berries"
+    }
+  },
+  "pattern": [
+    "L#G",
+    " S "
+  ],
+  "result": {
+    "item": "tea_mod_from_runny:tea_pot_miner_tea"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_tea_stone_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tea_mod_from_runny:tea_stone_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tea_mod_from_runny:tea_stone_from_smelting_tea_stone_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_tea_stone_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tea_mod_from_runny:tea_stone_from_smelting_tea_stone_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

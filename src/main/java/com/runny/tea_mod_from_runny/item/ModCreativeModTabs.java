@@ -61,6 +61,7 @@ public class ModCreativeModTabs {
 
                         // Solid blocks
                         output.accept(ModBlock.TEA_STONE_BLOCK.get());
+                        output.accept(ModBlock.TEA_SLAG_BLOCK.get());
 
                         // Saplings
                         output.accept(ModBlock.TEA_TREE_SAPLING.get());

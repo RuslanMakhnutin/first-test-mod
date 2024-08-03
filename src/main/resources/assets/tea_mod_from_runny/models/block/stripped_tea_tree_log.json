@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "tea_mod_from_runny:block/stripped_tea_tree_log_top",
-    "side": "tea_mod_from_runny:block/stripped_tea_tree_log"
-  }
-}

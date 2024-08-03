@@ -2,6 +2,7 @@
   "item.tea_mod_from_runny.fresh_tea_leaf": "Свежий чайный лист",
   "item.tea_mod_from_runny.dry_tea_leaf": "Высушенный чайный лист",
   "item.tea_mod_from_runny.tea_stone": "Чайно-камень",
+  "item.tea_mod_from_runny.tea_slag": "Чайный шлак",
 
   "item.tea_mod_from_runny.cup": "Чашка",
   "item.tea_mod_from_runny.cup_water": "Чашка с водой",
@@ -29,6 +30,7 @@
   "block.tea_mod_from_runny.tea_stone_ore": "Чайно-каменная руда",
   "block.tea_mod_from_runny.tea_stone_block": "Чайно-каменный блок",
   "block.tea_mod_from_runny.tea_tree_sapling": "Саженец чайно-дерева",
+  "block.tea_mod_from_runny:tea_slag_block": "Блок чайного шлака>",
 
   "item.tea_mod_from_runny.wooden_tea_cutter": "Деревянный чайный-нож",
   "item.tea_mod_from_runny.stone_tea_cutter": "Каменный чайный-нож",

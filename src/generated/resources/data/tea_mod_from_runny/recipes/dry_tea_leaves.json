@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "tea_mod_from_runny:dry_tea_leaf"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TTT",
+    "TTT"
+  ],
+  "result": {
+    "item": "tea_mod_from_runny:dry_tea_leaves"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cup": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tea_mod_from_runny:cup"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tea_mod_from_runny:cup_water"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_water_tea_pot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tea_mod_from_runny:water_tea_pot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_water_tea_pot",
+      "has_cup",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tea_mod_from_runny:cup_water"
+    ]
+  },
+  "sends_telemetry_event": false
+}
