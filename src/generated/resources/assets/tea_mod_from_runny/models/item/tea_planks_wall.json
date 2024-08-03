@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "tea_mod_from_runny:block/tea_tree_planks"
+  }
+}

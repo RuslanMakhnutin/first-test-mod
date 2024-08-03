@@ -39,6 +39,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlock.TEA_TREE_PLANKS.get()
                         );
 
+
         this.tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(ModBlock.TEA_LEAVES.get(),
                         ModBlock.DRY_TEA_LEAVES.get()
@@ -46,5 +47,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(ModBlock.TEA_SLAG_BLOCK.get());
+
+        this.tag(BlockTags.FENCES)
+                .add(ModBlock.TEA_PLANKS_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlock.TEA_PLANKS_GATE_FENCE.get());
+        this.tag(BlockTags.WALLS)
+                .add(ModBlock.TEA_PLANKS_WALL.get());
+        this.tag(BlockTags.TRAPDOORS)
+                .add(ModBlock.TEA_TRAPDOOR.get());
+
     }
 }

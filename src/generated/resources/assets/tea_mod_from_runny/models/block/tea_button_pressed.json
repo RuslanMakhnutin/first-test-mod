@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "tea_mod_from_runny:block/tea_tree_planks"
+  }
+}

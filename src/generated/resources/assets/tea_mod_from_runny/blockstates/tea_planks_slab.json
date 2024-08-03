@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tea_mod_from_runny:block/tea_planks_slab"
+    },
+    "type=double": {
+      "model": "tea_mod_from_runny:block/tea_tree_planks"
+    },
+    "type=top": {
+      "model": "tea_mod_from_runny:block/tea_planks_slab_top"
+    }
+  }
+}

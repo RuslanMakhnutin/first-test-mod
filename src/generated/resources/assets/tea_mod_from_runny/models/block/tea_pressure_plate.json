@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_up",
+  "textures": {
+    "texture": "tea_mod_from_runny:block/tea_tree_planks"
+  }
+}

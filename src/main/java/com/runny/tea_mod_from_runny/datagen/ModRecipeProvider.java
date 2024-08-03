@@ -181,10 +181,66 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlock.TEA_TREE_PLANKS.get()), has(ModBlock.TEA_TREE_PLANKS.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlock.TEA_PLANKS_STAIRS.get(), 4)
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###")
+                .define('#', ModBlock.TEA_TREE_PLANKS.get())
+                .unlockedBy(getHasName(ModBlock.TEA_TREE_PLANKS.get()), has(ModBlock.TEA_TREE_PLANKS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlock.TEA_PLANKS_DOOR.get(), 3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModBlock.TEA_TREE_PLANKS.get())
+                .unlockedBy(getHasName(ModBlock.TEA_TREE_PLANKS.get()), has(ModBlock.TEA_TREE_PLANKS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlock.TEA_TRAPDOOR.get(), 2)
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModBlock.TEA_TREE_PLANKS.get())
+                .unlockedBy(getHasName(ModBlock.TEA_TREE_PLANKS.get()), has(ModBlock.TEA_TREE_PLANKS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlock.TEA_PLANKS_SLAB.get(), 6)
+                .pattern("###")
+                .define('#', ModBlock.TEA_TREE_PLANKS.get())
+                .unlockedBy(getHasName(ModBlock.TEA_TREE_PLANKS.get()), has(ModBlock.TEA_TREE_PLANKS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlock.TEA_PRESSURE_PLATE.get())
+                .pattern("##")
+                .define('#', ModBlock.TEA_TREE_PLANKS.get())
+                .unlockedBy(getHasName(ModBlock.TEA_TREE_PLANKS.get()), has(ModBlock.TEA_TREE_PLANKS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlock.TEA_PLANKS_FENCE.get(), 3)
+                .pattern("#/#")
+                .pattern("#/#")
+                .define('#', ModBlock.TEA_TREE_PLANKS.get())
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(ModBlock.TEA_TREE_PLANKS.get()), has(ModBlock.TEA_TREE_PLANKS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlock.TEA_PLANKS_GATE_FENCE.get(), 1)
+                .pattern("/#/")
+                .pattern("/#/")
+                .define('#', ModBlock.TEA_TREE_PLANKS.get())
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(ModBlock.TEA_TREE_PLANKS.get()), has(ModBlock.TEA_TREE_PLANKS.get()))
+                .save(pWriter);
+
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TEA_STONE.get(), 9)
                 .requires(ModBlock.TEA_STONE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlock.TEA_STONE_BLOCK.get()), has(ModBlock.TEA_STONE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlock.TEA_BUTTON.get())
+                .requires(ModBlock.TEA_TREE_PLANKS.get())
+                .unlockedBy(getHasName(ModBlock.TEA_TREE_PLANKS.get()), has(ModBlock.TEA_TREE_PLANKS.get()))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.DRY_TEA_LEAF.get(), 9)

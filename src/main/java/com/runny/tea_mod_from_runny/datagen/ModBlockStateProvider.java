@@ -3,10 +3,7 @@ package com.runny.tea_mod_from_runny.datagen;
 import com.runny.tea_mod_from_runny.TeaModFromRunny;
 import com.runny.tea_mod_from_runny.block.ModBlock;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.GlassBlock;
-import net.minecraft.world.level.block.LeavesBlock;
-import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
@@ -38,6 +35,24 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         // Sand
         blockWithItem(ModBlock.TEA_SLAG_BLOCK);
+
+        // Decor
+        stairsBlock((StairBlock) ModBlock.TEA_PLANKS_STAIRS.get(), blockTexture(ModBlock.TEA_TREE_PLANKS.get()));
+        slabBlock((SlabBlock) ModBlock.TEA_PLANKS_SLAB.get(), blockTexture(ModBlock.TEA_TREE_PLANKS.get()), blockTexture(ModBlock.TEA_TREE_PLANKS.get()));
+
+        // Redstone
+        buttonBlock((ButtonBlock) ModBlock.TEA_BUTTON.get(), blockTexture(ModBlock.TEA_TREE_PLANKS.get()));
+        pressurePlateBlock((PressurePlateBlock) ModBlock.TEA_PRESSURE_PLATE.get(), blockTexture(ModBlock.TEA_TREE_PLANKS.get()));
+
+        // Fence
+        fenceBlock((FenceBlock) ModBlock.TEA_PLANKS_FENCE.get(), blockTexture(ModBlock.TEA_TREE_PLANKS.get()));
+        fenceGateBlock((FenceGateBlock) ModBlock.TEA_PLANKS_GATE_FENCE.get(), blockTexture(ModBlock.TEA_TREE_PLANKS.get()));
+        wallBlock((WallBlock) ModBlock.TEA_PLANKS_WALL.get(), blockTexture(ModBlock.TEA_TREE_PLANKS.get()));
+
+        // Doors
+        doorBlockWithRenderType((DoorBlock) ModBlock.TEA_PLANKS_DOOR.get(), modLoc("block/tea_planks_door_bottom"),
+                modLoc("block/tea_planks_door_top"),"cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) ModBlock.TEA_TRAPDOOR.get(), modLoc("block/tea_trapdoor"), true, "cutout");
 
         // Test
         blockWithItem(ModBlock.SOUND_BLOCK);

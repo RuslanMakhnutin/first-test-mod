@@ -1,13 +1,16 @@
 package com.runny.tea_mod_from_runny.datagen;
 
 import com.runny.tea_mod_from_runny.TeaModFromRunny;
+import com.runny.tea_mod_from_runny.block.ModBlock;
 import com.runny.tea_mod_from_runny.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModItemModelProvider extends ItemModelProvider {
@@ -47,11 +50,56 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.NETHERITE_TEA_CUTTER);
 
         simpleItem(ModItems.TEST_TOOL);
+
+        simpleBlockItem(ModBlock.TEA_PLANKS_DOOR);
+
+        fenceItem(ModBlock.TEA_PLANKS_FENCE, ModBlock.TEA_TREE_PLANKS);
+        buttonItem(ModBlock.TEA_BUTTON, ModBlock.TEA_TREE_PLANKS);
+        wallItem(ModBlock.TEA_PLANKS_WALL, ModBlock.TEA_TREE_PLANKS);
+
+        evenSimplerBlockItem(ModBlock.TEA_PLANKS_STAIRS);
+        evenSimplerBlockItem(ModBlock.TEA_PLANKS_SLAB);
+        evenSimplerBlockItem(ModBlock.TEA_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlock.TEA_PLANKS_GATE_FENCE);
+
+        trapdoorItem(ModBlock.TEA_TRAPDOOR);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(TeaModFromRunny.mod_id, "item/"+item.getId().getPath()));
+                new ResourceLocation(TeaModFromRunny.mod_id, "item/" + item.getId().getPath()));
+    }
+
+    public void trapdoorItem(RegistryObject<Block> block) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath() + "_bottom"));
+    }
+
+    public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
+                .texture("texture", new ResourceLocation(TeaModFromRunny.mod_id, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/button_inventory"))
+                .texture("texture", new ResourceLocation(TeaModFromRunny.mod_id, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall", new ResourceLocation(TeaModFromRunny.mod_id, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(TeaModFromRunny.mod_id, "item/" + item.getId().getPath()));
+    }
+
+    public void evenSimplerBlockItem(RegistryObject<Block> block) {
+        this.withExistingParent(TeaModFromRunny.mod_id + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
+
     }
 }

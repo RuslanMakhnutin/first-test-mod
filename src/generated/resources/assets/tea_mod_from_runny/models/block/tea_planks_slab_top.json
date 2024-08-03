@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "tea_mod_from_runny:block/tea_tree_planks",
+    "side": "tea_mod_from_runny:block/tea_tree_planks",
+    "top": "tea_mod_from_runny:block/tea_tree_planks"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "tea_mod_from_runny:block/tea_planks_door_bottom",
+    "top": "tea_mod_from_runny:block/tea_planks_door_top"
+  }
+}

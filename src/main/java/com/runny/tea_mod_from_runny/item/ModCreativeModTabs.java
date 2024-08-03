@@ -74,6 +74,17 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.DIAMOND_TEA_CUTTER.get());
                         output.accept(ModItems.NETHERITE_TEA_CUTTER.get());
 
+                        // Decor
+                        output.accept(ModBlock.TEA_PLANKS_STAIRS.get());
+                        output.accept(ModBlock.TEA_PLANKS_DOOR.get());
+                        output.accept(ModBlock.TEA_TRAPDOOR.get());
+                        output.accept(ModBlock.TEA_BUTTON.get());
+                        output.accept(ModBlock.TEA_PLANKS_FENCE.get());
+                        output.accept(ModBlock.TEA_PLANKS_GATE_FENCE.get());
+                        output.accept(ModBlock.TEA_PLANKS_WALL.get());
+                        output.accept(ModBlock.TEA_PLANKS_SLAB.get());
+                        output.accept(ModBlock.TEA_PRESSURE_PLATE.get());
+
                         // Test
                         output.accept(ModItems.TEST_TOOL.get());
                         output.accept(ModBlock.TEST_BLOCK.get());

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_tea_tree_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tea_mod_from_runny:tea_tree_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tea_mod_from_runny:tea_button"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_tea_tree_planks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tea_mod_from_runny:tea_button"
+    ]
+  },
+  "sends_telemetry_event": false
+}

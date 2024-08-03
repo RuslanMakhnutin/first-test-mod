@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "tea_mod_from_runny:block/tea_tree_planks"
+  }
+}

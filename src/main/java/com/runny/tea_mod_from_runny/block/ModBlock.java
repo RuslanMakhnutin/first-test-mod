@@ -3,11 +3,13 @@ package com.runny.tea_mod_from_runny.block;
 import com.runny.tea_mod_from_runny.TeaModFromRunny;
 import com.runny.tea_mod_from_runny.block.custom.SoundBlock;
 import com.runny.tea_mod_from_runny.item.ModItems;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -49,7 +51,30 @@ public class ModBlock {
     public static final RegistryObject<Block> SOUND_BLOCK = registryBlock("sound_block", // Add - Test block
             () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).noLootTable()));
 
+    public static final RegistryObject<Block> TEA_PLANKS_STAIRS = registryBlock("tea_planks_stairs", // Add - stairs from tea planks
+            () -> new StairBlock(() -> ModBlock.TEA_TREE_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> TEA_PLANKS_SLAB = registryBlock("tea_planks_slab", // Add - slab of tea planks
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
+    public static final RegistryObject<Block> TEA_BUTTON = registryBlock("tea_button", // Add - button from tea planks
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON),
+                    BlockSetType.OAK, 10, true));
+    public static final RegistryObject<Block> TEA_PRESSURE_PLATE = registryBlock("tea_pressure_plate", // Add - pressure plate from tea planks
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE),
+                    BlockSetType.OAK));
+
+    public static final RegistryObject<Block> TEA_PLANKS_FENCE = registryBlock("tea_planks_fence", // Add - Fence of tea planks
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> TEA_PLANKS_GATE_FENCE = registryBlock("tea_planks_gate_fence", // Add - Gate-Fence of tea planks
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+    public static final RegistryObject<Block> TEA_PLANKS_WALL = registryBlock("tea_planks_wall", // Add - Wall of tea planks
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> TEA_PLANKS_DOOR = registryBlock("tea_planks_door", // Add - Door of tea planks
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion(),BlockSetType.OAK));
+
+    public static final RegistryObject<Block> TEA_TRAPDOOR = registryBlock("tea_trapdoor", // Add - Trapdoor of tea planks
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion(),BlockSetType.OAK));
 
 
     private  static  <T extends Block> RegistryObject<T> registryBlock(String name, Supplier<T> block) {

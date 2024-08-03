@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tea_mod_from_runny:tea_tree_planks"
+    }
+  ],
+  "result": {
+    "item": "tea_mod_from_runny:tea_button"
+  }
+}
