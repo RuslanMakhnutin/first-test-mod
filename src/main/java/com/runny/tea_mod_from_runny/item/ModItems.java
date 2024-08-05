@@ -3,9 +3,7 @@ package com.runny.tea_mod_from_runny.item;
 import com.runny.tea_mod_from_runny.TeaModFromRunny;
 import com.runny.tea_mod_from_runny.item.custom.*;
 import net.minecraft.world.food.Foods;
-import net.minecraft.world.item.HoneyBottleItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -76,6 +74,24 @@ public class ModItems {
     // Fuel
     public static final RegistryObject<Item> TEA_SLUG = ITEMS.register("tea_slag", // Add tea-slag fuel
             () -> new FuelItem(new Item.Properties(), 100));
+
+
+    // Manganite tools
+    public static final RegistryObject<Item> MANGANITE_SWORD = ITEMS.register("manganite_sword", // Add - test-tool
+            () -> new SwordItem(ModToolTiers.MANGANITE, 6, 11.5f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> MANGANITE_PICKAXE = ITEMS.register("manganite_pickaxe", // Add - test-tool
+            () -> new PickaxeItem(ModToolTiers.MANGANITE, 6, 11.5f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> MANGANITE_AXE = ITEMS.register("manganite_axe", // Add - test-tool
+            () -> new AxeItem(ModToolTiers.MANGANITE, 6, 11.5f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> MANGANITE_HOE = ITEMS.register("manganite_hoe", // Add - test-tool
+            () -> new HoeItem(ModToolTiers.MANGANITE, 6, 11.5f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> MANGANITE_SHOVEL = ITEMS.register("manganite_shovel", // Add - test-tool
+            () -> new ShovelItem(ModToolTiers.MANGANITE, 6, 11.5f,
+                    new Item.Properties()));
 
     // Test
     public static final RegistryObject<Item> TEST_TOOL = ITEMS.register("test_tool", // Add - test-tool

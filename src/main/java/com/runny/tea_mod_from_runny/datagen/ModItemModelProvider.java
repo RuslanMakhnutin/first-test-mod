@@ -60,6 +60,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlock.END_MANGANITE_ORE);
         evenSimplerBlockItem(ModBlock.MANGANITE_BLOCK);
 
+        handHeldItem(ModItems.MANGANITE_SWORD);
+        handHeldItem(ModItems.MANGANITE_AXE);
+        handHeldItem(ModItems.MANGANITE_PICKAXE);
+        handHeldItem(ModItems.MANGANITE_SHOVEL);
+        handHeldItem(ModItems.MANGANITE_HOE);
+
         trapdoorItem(ModBlock.TEA_TRAPDOOR);
     }
 
@@ -99,5 +105,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         this.withExistingParent(TeaModFromRunny.mod_id + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
                 modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
 
+    }
+
+    public ItemModelBuilder handHeldItem(RegistryObject<Item> item){
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(TeaModFromRunny.mod_id,"item/"+item.getId().getPath()));
     }
 }

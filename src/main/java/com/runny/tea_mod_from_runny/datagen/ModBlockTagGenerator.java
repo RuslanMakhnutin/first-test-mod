@@ -40,6 +40,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlock.END_MANGANITE_ORE.get());
 
+        this.tag(ModTags.Blocks.NEEDS_MANGANITE_TOOL)
+                .add(ModBlock.SOUND_BLOCK.get());
+
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlock.TEA_STONE_ORE.get(),
                         ModBlock.TEA_STONE_BLOCK.get(),
@@ -47,6 +50,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlock.DEEPSLATE_MANGANITE_ORE.get(),
                         ModBlock.NETHERRACK_MANGANITE_ORE.get(),
                         ModBlock.END_MANGANITE_ORE.get(),
+                        ModBlock.SOUND_BLOCK.get(),
                         ModBlock.MANGANITE_BLOCK.get()
                 );
 

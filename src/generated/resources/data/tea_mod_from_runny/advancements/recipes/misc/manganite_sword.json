@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_manganite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tea_mod_from_runny:manganite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tea_mod_from_runny:manganite_sword"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_manganite",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tea_mod_from_runny:manganite_sword"
+    ]
+  },
+  "sends_telemetry_event": false
+}

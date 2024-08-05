@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "tea_mod_from_runny:item/manganite_shovel"
+  }
+}

@@ -240,6 +240,51 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlock.TEA_TREE_PLANKS.get()), has(ModBlock.TEA_TREE_PLANKS.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MANGANITE_SWORD.get())
+                .pattern("#")
+                .pattern("#")
+                .pattern("/")
+                .define('#', ModItems.MANGANITE.get())
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(ModItems.MANGANITE.get()), has(ModItems.MANGANITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MANGANITE_AXE.get())
+                .pattern("##")
+                .pattern("#/")
+                .pattern(" /")
+                .define('#', ModItems.MANGANITE.get())
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(ModItems.MANGANITE.get()), has(ModItems.MANGANITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MANGANITE_PICKAXE.get())
+                .pattern("###")
+                .pattern(" / ")
+                .pattern(" / ")
+                .define('#', ModItems.MANGANITE.get())
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(ModItems.MANGANITE.get()), has(ModItems.MANGANITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MANGANITE_SHOVEL.get())
+                .pattern("#")
+                .pattern("/")
+                .pattern("/")
+                .define('#', ModItems.MANGANITE.get())
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(ModItems.MANGANITE.get()), has(ModItems.MANGANITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MANGANITE_HOE.get())
+                .pattern("##")
+                .pattern("/ ")
+                .pattern("/ ")
+                .define('#', ModItems.MANGANITE.get())
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(ModItems.MANGANITE.get()), has(ModItems.MANGANITE.get()))
+                .save(pWriter);
+
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TEA_STONE.get(), 9)
                 .requires(ModBlock.TEA_STONE_BLOCK.get())

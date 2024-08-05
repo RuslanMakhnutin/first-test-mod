@@ -93,6 +93,13 @@ public class ModCreativeModTabs {
                         output.accept(ModBlock.END_MANGANITE_ORE.get());
                         output.accept(ModItems.MANGANITE.get());
 
+                        // Manganite-Tools
+                        output.accept(ModItems.MANGANITE_SWORD.get());
+                        output.accept(ModItems.MANGANITE_HOE.get());
+                        output.accept(ModItems.MANGANITE_AXE.get());
+                        output.accept(ModItems.MANGANITE_PICKAXE.get());
+                        output.accept(ModItems.MANGANITE_SHOVEL.get());
+
                         // Test
                         output.accept(ModItems.TEST_TOOL.get());
                         output.accept(ModBlock.TEST_BLOCK.get());

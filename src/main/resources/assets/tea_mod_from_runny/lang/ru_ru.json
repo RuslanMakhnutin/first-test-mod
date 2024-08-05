@@ -43,7 +43,13 @@
   "item.tea_mod_from_runny.iron_tea_cutter": "Железный чайный-нож",
   "item.tea_mod_from_runny.golden_tea_cutter": "Золотой чайный-нож",
   "item.tea_mod_from_runny.diamond_tea_cutter": "Алмазный чайный-нож",
-  "item.tea_mod_from_runny.netherite_tea_cutter": "Незеритовый чайный-ножr",
+  "item.tea_mod_from_runny.netherite_tea_cutter": "Незеритовый чайный-нож",
+
+  "item.tea_mod_from_runny.manganite_axe": "Манганитовый топор",
+  "item.tea_mod_from_runny.manganite_hoe": "Манганитовая тяпка",
+  "item.tea_mod_from_runny.manganite_pickaxe": "Манганитовая кирка",
+  "item.tea_mod_from_runny.manganite_shovel": "Манганитовая лопата",
+  "item.tea_mod_from_runny.manganite_sword": "Манганитовый меч",
 
   "creativetab.tea_mod_from_runny": "Tea mod from Runny"
 }

@@ -12,6 +12,7 @@ public class ModTags {
 
     public static class Blocks {
         public static final TagKey<Block> TEST_TOOL_VALUABLES = tag("test_tool_valuables");
+        public static final TagKey<Block> NEEDS_MANGANITE_TOOL = tag("need_manganite_tools");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(TeaModFromRunny.mod_id, name));

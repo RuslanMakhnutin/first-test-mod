@@ -49,7 +49,7 @@ public class ModBlock {
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().noLootTable()));
 
     public static final RegistryObject<Block> SOUND_BLOCK = registryBlock("sound_block", // Add - Test block
-            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).noLootTable()));
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)));
 
     public static final RegistryObject<Block> TEA_PLANKS_STAIRS = registryBlock("tea_planks_stairs", // Add - stairs from tea planks
             () -> new StairBlock(() -> ModBlock.TEA_TREE_PLANKS.get().defaultBlockState(),

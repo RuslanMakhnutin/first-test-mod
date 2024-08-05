@@ -42,6 +42,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlock.TEA_PLANKS_STAIRS.get());
         this.dropSelf(ModBlock.TEA_PRESSURE_PLATE.get());
         this.dropSelf(ModBlock.MANGANITE_BLOCK.get());
+        this.dropSelf(ModBlock.SOUND_BLOCK.get());
 
         this.add(ModBlock.TEA_PLANKS_SLAB.get(),
                 block -> createSlabItemTable(ModBlock.TEA_PLANKS_SLAB.get()));
