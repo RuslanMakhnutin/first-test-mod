@@ -17,33 +17,27 @@ public class ModItems {
 
     // Ingredients
     public static final RegistryObject<Item> FRESH_TEA_LEAF = ITEMS.register("fresh_tea_leaf", // Add - Fresh tea-leaf
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFood.FRESH_TEA_LEAF)));
     public static final RegistryObject<Item> DRY_TEA_LEAF = ITEMS.register("dry_tea_leaf", // Add - Dry tea-leaf
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFood.DRY_TEA_LEAF)));
     public static final RegistryObject<Item> TEA_STONE = ITEMS.register("tea_stone", // Add - Tea-stone
             () -> new Item(new Item.Properties()));
 
     // Cups
     public static final RegistryObject<Item> CUP = ITEMS.register("cup", // Add - cup
             () -> new Item(new Item.Properties()));
-
-
     public static final RegistryObject<Item> CUP_WATER = ITEMS.register("cup_water", // Add - cup with water
-            () -> new ModDrink(new Item.Properties().stacksTo(4).food(ModDrink.WATER_CUP)));
-
-//    public static final RegistryObject<Item> TEST_DRINK = ITEMS.register("test_drink", // Add - cup with miner tea
-//            () -> new ModDrink(new Item.Properties().stacksTo(4)));
-
+            () -> new ModDrink(new Item.Properties().stacksTo(4).food(ModDrink.WATER)));
     public static final RegistryObject<Item> CUP_CLASSIC_TEA = ITEMS.register("cup_classic_tea", // Add - cup with classic tea
-            () -> new Item(new Item.Properties().stacksTo(4).food(ModFood.CLASSIC_TEA)));
+            () -> new ModDrink(new Item.Properties().stacksTo(4).food(ModDrink.CLASSIC_TEA)));
     public static final RegistryObject<Item> CUP_TEA_STONE_TEA = ITEMS.register("cup_tea_stone_tea", // Add - cup with tea-stone tea
-            () -> new Item(new Item.Properties().stacksTo(4).food(ModFood.TEA_STONE_TEA)));
+            () -> new ModDrink(new Item.Properties().stacksTo(4).food(ModDrink.TEA_STONE_TEA)));
     public static final RegistryObject<Item> CUP_GLOW_BERRIES_TEA = ITEMS.register("cup_glow_berries_tea", // Add - cup with glow berries tea
-            () -> new Item(new Item.Properties().stacksTo(4).food(ModFood.GLOW_TEA)));
+            () -> new ModDrink(new Item.Properties().stacksTo(4).food(ModDrink.GLOW_BERRIES_TEA)));
     public static final RegistryObject<Item> CUP_SWEET_BERRIES_TEA = ITEMS.register("cup_sweet_berries_tea", // Add - cup with sweet berries tea
-            () -> new Item(new Item.Properties().stacksTo(4).food(ModFood.SWEET_TEA)));
+            () -> new ModDrink(new Item.Properties().stacksTo(4).food(ModDrink.SWEET_BERRIES_TEA)));
     public static final RegistryObject<Item> CUP_MINER_TEA = ITEMS.register("cup_miner_tea", // Add - cup with miner tea
-            () -> new Item(new Item.Properties().stacksTo(4).food(ModFood.MINER_TEA)));
+            () -> new ModDrink(new Item.Properties().stacksTo(4).food(ModDrink.MINER_TEA)));
 
     // Tea-pots
     public static final RegistryObject<Item> UNFIRED_TEA_POT = ITEMS.register("unfired_tea_pot", // Add - Unfired tea pot
@@ -84,8 +78,6 @@ public class ModItems {
     // Test
     public static final RegistryObject<Item> TEST_TOOL = ITEMS.register("test_tool", // Add - test-tool
             () -> new TestToolItem(new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> SAPPHIRE_STAFF = ITEMS.register("sapphire_staff", // Add - staff
-            () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
