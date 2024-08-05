@@ -1,6 +1,11 @@
 {
   "values": [
     "tea_mod_from_runny:tea_stone_ore",
-    "tea_mod_from_runny:tea_stone_block"
+    "tea_mod_from_runny:tea_stone_block",
+    "tea_mod_from_runny:stone_manganite_ore",
+    "tea_mod_from_runny:deepslate_manganite_ore",
+    "tea_mod_from_runny:netherrack_manganite_ore",
+    "tea_mod_from_runny:end_manganite_ore",
+    "tea_mod_from_runny:manganite_block"
   ]
 }

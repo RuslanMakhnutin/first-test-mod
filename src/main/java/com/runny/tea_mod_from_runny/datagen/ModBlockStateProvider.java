@@ -33,8 +33,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockOfLeaves(ModBlock.DRY_TEA_LEAVES);
         blockWithItem(ModBlock.TEA_TREE_SAPLING);
 
-        // Sand
+        // Solid blocks
         blockWithItem(ModBlock.TEA_SLAG_BLOCK);
+        blockWithItem(ModBlock.MANGANITE_BLOCK);
 
         // Decor
         stairsBlock((StairBlock) ModBlock.TEA_PLANKS_STAIRS.get(), blockTexture(ModBlock.TEA_TREE_PLANKS.get()));
@@ -53,6 +54,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType((DoorBlock) ModBlock.TEA_PLANKS_DOOR.get(), modLoc("block/tea_planks_door_bottom"),
                 modLoc("block/tea_planks_door_top"),"cutout");
         trapdoorBlockWithRenderType((TrapDoorBlock) ModBlock.TEA_TRAPDOOR.get(), modLoc("block/tea_trapdoor"), true, "cutout");
+
+        // Ores
+        blockWithItem(ModBlock.STONE_MANGANITE_ORE);
+        blockWithItem(ModBlock.DEEPSLATE_MANGANITE_ORE);
+        blockWithItem(ModBlock.NETHERRACK_MANGANITE_ORE);
+        blockWithItem(ModBlock.END_MANGANITE_ORE);
 
         // Test
         blockWithItem(ModBlock.SOUND_BLOCK);

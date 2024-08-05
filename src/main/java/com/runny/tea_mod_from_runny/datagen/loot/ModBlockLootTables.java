@@ -41,6 +41,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlock.TEA_BUTTON.get());
         this.dropSelf(ModBlock.TEA_PLANKS_STAIRS.get());
         this.dropSelf(ModBlock.TEA_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlock.MANGANITE_BLOCK.get());
 
         this.add(ModBlock.TEA_PLANKS_SLAB.get(),
                 block -> createSlabItemTable(ModBlock.TEA_PLANKS_SLAB.get()));
@@ -49,6 +50,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlock.TEA_STONE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlock.TEA_STONE_ORE.get(), ModItems.TEA_STONE.get(), 2.0f, 6.0f));
+        this.add(ModBlock.STONE_MANGANITE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlock.STONE_MANGANITE_ORE.get(), ModItems.MANGANITE.get(), 1.0f, 4.0f));
+        this.add(ModBlock.DEEPSLATE_MANGANITE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlock.DEEPSLATE_MANGANITE_ORE.get(), ModItems.MANGANITE.get(), 1.0f, 4.0f));
+        this.add(ModBlock.NETHERRACK_MANGANITE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlock.NETHERRACK_MANGANITE_ORE.get(), ModItems.MANGANITE.get(), 1.0f, 4.0f));
+        this.add(ModBlock.END_MANGANITE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlock.END_MANGANITE_ORE.get(), ModItems.MANGANITE.get(), 1.0f, 4.0f));
         this.add(ModBlock.TEA_LEAVES.get(),
                 block -> createCopperLikeOreDrops(ModBlock.TEA_LEAVES.get(), ModItems.FRESH_TEA_LEAF.get(), 0.0f, 3.0f));
     }

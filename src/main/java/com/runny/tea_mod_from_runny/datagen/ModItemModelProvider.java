@@ -24,14 +24,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.TEA_SLUG);
         simpleItem(ModItems.DRY_TEA_LEAF);
         simpleItem(ModItems.FRESH_TEA_LEAF);
-
-//        simpleItem(ModItems.CUP);
-//        simpleItem(ModItems.CUP_WATER);
-//        simpleItem(ModItems.CUP_CLASSIC_TEA);
-//        simpleItem(ModItems.CUP_TEA_STONE_TEA);
-//        simpleItem(ModItems.CUP_GLOW_BERRIES_TEA);
-//        simpleItem(ModItems.CUP_SWEET_BERRIES_TEA);
-//        simpleItem(ModItems.CUP_MINER_TEA);
+        simpleItem(ModItems.MANGANITE);
 
         simpleItem(ModItems.UNFIRED_TEA_POT);
         simpleItem(ModItems.EMPTY_TEA_POT);
@@ -61,6 +54,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlock.TEA_PLANKS_SLAB);
         evenSimplerBlockItem(ModBlock.TEA_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlock.TEA_PLANKS_GATE_FENCE);
+        evenSimplerBlockItem(ModBlock.STONE_MANGANITE_ORE);
+        evenSimplerBlockItem(ModBlock.DEEPSLATE_MANGANITE_ORE);
+        evenSimplerBlockItem(ModBlock.NETHERRACK_MANGANITE_ORE);
+        evenSimplerBlockItem(ModBlock.END_MANGANITE_ORE);
+        evenSimplerBlockItem(ModBlock.MANGANITE_BLOCK);
 
         trapdoorItem(ModBlock.TEA_TRAPDOOR);
     }

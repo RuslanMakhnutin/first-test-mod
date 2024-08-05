@@ -1,11 +1,13 @@
-// 1.20.1	2024-08-03T18:55:51.8062573	Tags for minecraft:block mod id tea_mod_from_runny
+// 1.20.1	2024-08-06T00:43:44.0148095	Tags for minecraft:block mod id tea_mod_from_runny
 933a705e719465f768f4ad7bb795d274c5282d5d data/minecraft/tags/blocks/fences.json
 bf14b9f769b3058c9b744bcffcb36d1d5cfb00a5 data/minecraft/tags/blocks/fence_gates.json
 0e6119008a773b3cfb0080f325d349850a459dab data/minecraft/tags/blocks/mineable/axe.json
 8f8c92765f86cfe60c89aa0e5f56c75b14eb1730 data/minecraft/tags/blocks/mineable/hoe.json
-ce2b57583ff5e6d338497767059d3949a1750617 data/minecraft/tags/blocks/mineable/pickaxe.json
+1265751ee5795b8e50ea99169b4da3630db271dc data/minecraft/tags/blocks/mineable/pickaxe.json
 73c4cf467e86fef7e987a029ba2081d25c6d4681 data/minecraft/tags/blocks/mineable/shovel.json
-68673375d501a36e7912471b8253193a217d4268 data/minecraft/tags/blocks/needs_stone_tool.json
+6bf0ebe06269f0410cfd534abc4479850f7361ec data/minecraft/tags/blocks/needs_diamond_tool.json
+281231e7ee4a868c8b8345a03e338f851778d6be data/minecraft/tags/blocks/needs_iron_tool.json
+c8bf845307c0ad1d015d1c0131739c642fedacb9 data/minecraft/tags/blocks/needs_stone_tool.json
 536f944c65390697a870cbc8a8faea44cde414c4 data/minecraft/tags/blocks/trapdoors.json
 06da3ac10f1fa7b0814942a735afe202d31be7d0 data/minecraft/tags/blocks/walls.json
-f4a36296c607b88272ef69388a4749ae873f1d66 data/tea_mod_from_runny/tags/blocks/test_tool_valuables.json
+35fbe2f05121d578aac872f826e987d6440b2209 data/tea_mod_from_runny/tags/blocks/test_tool_valuables.json

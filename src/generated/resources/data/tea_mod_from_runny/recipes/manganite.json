@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tea_mod_from_runny:manganite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "tea_mod_from_runny:manganite"
+  }
+}

@@ -3,6 +3,7 @@
   "item.tea_mod_from_runny.dry_tea_leaf": "Dry tea leaf",
   "item.tea_mod_from_runny.tea_stone": "Tea-stone",
   "item.tea_mod_from_runny.tea_slag": "Tea-slag",
+  "item.tea_mod_from_runny.manganite": "Manganite",
 
   "item.tea_mod_from_runny.cup": "Cup",
   "item.tea_mod_from_runny.cup_water": "Cup with water",
@@ -40,6 +41,11 @@
   "block.tea_mod_from_runny:tea_planks_button": "Button from tea-planks",
   "block.tea_mod_from_runny:tea_planks_stairs": "Stairs from tea-planks",
   "block.tea_mod_from_runny:tea_planks_slab": "Slab from tea-planks",
+  "block.tea_mod_from_runny:stone_manganite_ore": "Manganite ore",
+  "block.tea_mod_from_runny:deepslate_manganite_ore": "Deepslate manganite ore",
+  "block.tea_mod_from_runny:netherrack_manganite_ore": "Netherrack manganite ore",
+  "block.tea_mod_from_runny:end_manganite_ore": "End manganite ore",
+  "block.tea_mod_from_runny:manganite_block": "Manganite block",
 
   "item.tea_mod_from_runny.wooden_tea_cutter": "Wooden tea-cutter",
   "item.tea_mod_from_runny.stone_tea_cutter": "Stone tea-cutter",
@@ -50,7 +56,6 @@
 
   "block.tea_mod_from_runny.test_block": "Block of testing",
   "block.tea_mod_from_runny.sound_block": "Block of sound",
-  "item.tea_mod_from_runny.sapphire_staff_2d": "Sapphire staff",
 
   "tooltip.tea_mod_from_runny.tea_cutter.tooltip": "It will help to cut tea leaves more effectively",
 

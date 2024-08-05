@@ -22,6 +22,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFood.DRY_TEA_LEAF)));
     public static final RegistryObject<Item> TEA_STONE = ITEMS.register("tea_stone", // Add - Tea-stone
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MANGANITE = ITEMS.register("manganite", // Add - Tea-stone
+            () -> new Item(new Item.Properties()));
 
     // Cups
     public static final RegistryObject<Item> CUP = ITEMS.register("cup", // Add - cup

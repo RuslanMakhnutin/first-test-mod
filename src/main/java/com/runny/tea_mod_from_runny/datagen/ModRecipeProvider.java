@@ -43,6 +43,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.TEA_STONE.get()),has(ModItems.TEA_STONE.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlock.MANGANITE_BLOCK.get())
+                .pattern("TTT")
+                .pattern("TTT")
+                .pattern("TTT")
+                .define('T', ModItems.MANGANITE.get())
+                .unlockedBy(getHasName(ModItems.MANGANITE.get()),has(ModItems.MANGANITE.get()))
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlock.TEA_LEAVES.get())
                 .pattern("TTT")
                 .pattern("TTT")
@@ -246,6 +254,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.DRY_TEA_LEAF.get(), 9)
                 .requires(ModBlock.DRY_TEA_LEAVES.get())
                 .unlockedBy(getHasName(ModBlock.DRY_TEA_LEAVES.get()), has(ModBlock.DRY_TEA_LEAVES.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MANGANITE.get(), 9)
+                .requires(ModBlock.MANGANITE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlock.MANGANITE_BLOCK.get()), has(ModBlock.MANGANITE_BLOCK.get()))
                 .save(pWriter);
     }
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

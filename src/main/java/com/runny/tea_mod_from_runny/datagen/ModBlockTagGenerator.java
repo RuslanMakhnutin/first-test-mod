@@ -21,14 +21,33 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(ModTags.Blocks.TEST_TOOL_VALUABLES)
-                .add(ModBlock.TEA_STONE_ORE.get()).addTag(Tags.Blocks.ORES);
+                .add(ModBlock.TEA_STONE_ORE.get())
+                .add(ModBlock.STONE_MANGANITE_ORE.get())
+                .add(ModBlock.DEEPSLATE_MANGANITE_ORE.get())
+                .add(ModBlock.NETHERRACK_MANGANITE_ORE.get())
+                .add(ModBlock.END_MANGANITE_ORE.get())
+                .addTag(Tags.Blocks.ORES);
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlock.TEA_STONE_ORE.get());
+                .add(ModBlock.TEA_STONE_ORE.get())
+                .add(ModBlock.NETHERRACK_MANGANITE_ORE.get());
+
+        this.tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlock.STONE_MANGANITE_ORE.get())
+                .add(ModBlock.DEEPSLATE_MANGANITE_ORE.get())
+                .add(ModBlock.MANGANITE_BLOCK.get());
+
+        this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlock.END_MANGANITE_ORE.get());
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlock.TEA_STONE_ORE.get(),
-                        ModBlock.TEA_STONE_BLOCK.get()
+                        ModBlock.TEA_STONE_BLOCK.get(),
+                        ModBlock.STONE_MANGANITE_ORE.get(),
+                        ModBlock.DEEPSLATE_MANGANITE_ORE.get(),
+                        ModBlock.NETHERRACK_MANGANITE_ORE.get(),
+                        ModBlock.END_MANGANITE_ORE.get(),
+                        ModBlock.MANGANITE_BLOCK.get()
                 );
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
@@ -38,7 +57,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlock.STRIPPED_TEA_TREE_WOOD.get(),
                         ModBlock.TEA_TREE_PLANKS.get()
                         );
-
 
         this.tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(ModBlock.TEA_LEAVES.get(),

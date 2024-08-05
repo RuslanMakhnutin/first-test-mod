@@ -76,6 +76,17 @@ public class ModBlock {
     public static final RegistryObject<Block> TEA_TRAPDOOR = registryBlock("tea_trapdoor", // Add - Trapdoor of tea planks
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion(),BlockSetType.OAK));
 
+    public static final RegistryObject<Block> MANGANITE_BLOCK = registryBlock("manganite_block", // Add - manganite block
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
+    public static final RegistryObject<Block> STONE_MANGANITE_ORE = registryBlock("stone_manganite_ore", // Add - manganite block
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
+    public static final RegistryObject<Block> DEEPSLATE_MANGANITE_ORE = registryBlock("deepslate_manganite_ore", // Add - manganite block
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
+    public static final RegistryObject<Block> NETHERRACK_MANGANITE_ORE = registryBlock("netherrack_manganite_ore", // Add - manganite block
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
+    public static final RegistryObject<Block> END_MANGANITE_ORE = registryBlock("end_manganite_ore", // Add - manganite block
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
+
 
     private  static  <T extends Block> RegistryObject<T> registryBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

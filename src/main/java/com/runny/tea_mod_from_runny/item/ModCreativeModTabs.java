@@ -85,9 +85,16 @@ public class ModCreativeModTabs {
                         output.accept(ModBlock.TEA_PLANKS_SLAB.get());
                         output.accept(ModBlock.TEA_PRESSURE_PLATE.get());
 
+                        // Manganite
+                        output.accept(ModBlock.MANGANITE_BLOCK.get());
+                        output.accept(ModBlock.STONE_MANGANITE_ORE.get());
+                        output.accept(ModBlock.DEEPSLATE_MANGANITE_ORE.get());
+                        output.accept(ModBlock.NETHERRACK_MANGANITE_ORE.get());
+                        output.accept(ModBlock.END_MANGANITE_ORE.get());
+                        output.accept(ModItems.MANGANITE.get());
+
                         // Test
                         output.accept(ModItems.TEST_TOOL.get());
-                        output.accept(ModItems.SAPPHIRE_STAFF.get());
                         output.accept(ModBlock.TEST_BLOCK.get());
                         output.accept(ModBlock.SOUND_BLOCK.get());
 
