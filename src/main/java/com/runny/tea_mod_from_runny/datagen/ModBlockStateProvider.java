@@ -48,7 +48,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         // Fence
         fenceBlock((FenceBlock) ModBlock.TEA_PLANKS_FENCE.get(), blockTexture(ModBlock.TEA_TREE_PLANKS.get()));
         fenceGateBlock((FenceGateBlock) ModBlock.TEA_PLANKS_GATE_FENCE.get(), blockTexture(ModBlock.TEA_TREE_PLANKS.get()));
-        wallBlock((WallBlock) ModBlock.TEA_PLANKS_WALL.get(), blockTexture(ModBlock.TEA_TREE_PLANKS.get()));
+        wallBlock((WallBlock) ModBlock.TEA_LOG_WALL.get(), blockTexture(ModBlock.TEA_TREE_LOG.get()));
 
         // Doors
         doorBlockWithRenderType((DoorBlock) ModBlock.TEA_PLANKS_DOOR.get(), modLoc("block/tea_planks_door_bottom"),

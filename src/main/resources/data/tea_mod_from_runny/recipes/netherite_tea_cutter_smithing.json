@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "tea_mod_from_runny:diamond_tea_cutter"
+  },
+  "result": {
+    "item": "tea_mod_from_runny:netherite_tea_cutter"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

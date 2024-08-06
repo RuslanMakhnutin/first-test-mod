@@ -43,7 +43,7 @@ public class TeaCutterItem extends Item {
                     foundBlock = true;
                     player.sendSystemMessage(Component.literal("You have received " + count + " leaves of tea!"));
                     ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(ModItems.FRESH_TEA_LEAF.get(), count));
-                    lvl.destroyBlock(posClicked.below(),true);
+                    lvl.destroyBlock(posClicked.below(),false);
                 }
                 if (!foundBlock){
                 player.sendSystemMessage(Component.literal("This is not tea!"));

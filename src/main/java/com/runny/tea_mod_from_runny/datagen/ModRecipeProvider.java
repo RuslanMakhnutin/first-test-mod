@@ -7,6 +7,7 @@ import com.runny.tea_mod_from_runny.util.ModTags;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.nbt.Tag;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
@@ -14,6 +15,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
@@ -283,6 +285,62 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', ModItems.MANGANITE.get())
                 .define('/', Items.STICK)
                 .unlockedBy(getHasName(ModItems.MANGANITE.get()), has(ModItems.MANGANITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.WOODEN_TEA_CUTTER.get())
+                .pattern("#/")
+                .pattern("#/")
+                .pattern("#/")
+                .define('#', ModBlock.TEA_TREE_PLANKS.get())
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(Items.STICK), has(Items.STICK))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STONE_TEA_CUTTER.get())
+                .pattern("#/")
+                .pattern("#/")
+                .pattern("#/")
+                .define('#', Blocks.COBBLESTONE)
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(Blocks.COBBLESTONE), has(Blocks.COBBLESTONE))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.IRON_TEA_CUTTER.get())
+                .pattern("#/")
+                .pattern("#/")
+                .pattern("#/")
+                .define('#', Items.IRON_INGOT)
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GOLDEN_TEA_CUTTER.get())
+                .pattern("#/")
+                .pattern("#/")
+                .pattern("#/")
+                .define('#', Items.GOLD_INGOT)
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.DIAMOND_TEA_CUTTER.get())
+                .pattern("#/")
+                .pattern("#/")
+                .pattern("#/")
+                .define('#', Items.DIAMOND)
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(Items.DIAMOND), has(Items.DIAMOND))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MANGANITE_UPGRADE_SMITHING_TEMPLATE.get(), 2)
+                .pattern("#T#")
+                .pattern("#B#")
+                .pattern("###")
+                .define('#', Items.DIAMOND)
+                .define('T', ModItems.MANGANITE_UPGRADE_SMITHING_TEMPLATE.get())
+                .define('B', Blocks.END_STONE)
+                .unlockedBy(getHasName(ModItems.MANGANITE_UPGRADE_SMITHING_TEMPLATE.get()),
+                        has(ModItems.MANGANITE_UPGRADE_SMITHING_TEMPLATE.get()))
                 .save(pWriter);
 
 

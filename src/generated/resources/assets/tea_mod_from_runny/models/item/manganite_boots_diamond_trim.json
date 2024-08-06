@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tea_mod_from_runny:item/manganite_boots",
+    "layer1": "minecraft:trims/items/boots_trim_diamond"
+  }
+}

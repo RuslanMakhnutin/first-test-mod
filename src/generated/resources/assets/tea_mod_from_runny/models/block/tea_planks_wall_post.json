@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_wall_post",
   "textures": {
-    "wall": "tea_mod_from_runny:block/tea_tree_planks"
+    "wall": "tea_mod_from_runny:block/tea_tree_log"
   }
 }

@@ -9,7 +9,7 @@
   "item.tea_mod_from_runny.cup_water": "Чашка с водой",
   "item.tea_mod_from_runny.cup_classic_tea": "Чашка с классическим чаем",
   "item.tea_mod_from_runny.cup_tea_stone_tea": "Чашка с чайно-каменным чаем",
-  "itemы.tea_mod_from_runny.cup_glow_berries_tea": "Чашка с чаем из светящихся ягод",
+  "item.tea_mod_from_runny.cup_glow_berries_tea": "Чашка с чаем из светящихся ягод",
   "item.tea_mod_from_runny.cup_sweet_berries_tea": "Чашка с чаем из сладких ягод",
   "item.tea_mod_from_runny.cup_miner_tea": "Чай с \"Шахтерским\" чаем",
 
@@ -26,17 +26,31 @@
   "block.tea_mod_from_runny.tea_tree_wood": "Древесина чайно-дерева",
   "block.tea_mod_from_runny.stripped_tea_tree_log": "Обтесанное бревно чайно-дерево",
   "block.tea_mod_from_runny.stripped_tea_tree_wood": "Обтесанное древесина чайно-дерева",
+  "block.tea_mod_from_runny.tea_tree_planks": "Доски чайно-дерева",
+  "block.tea_mod_from_runny.tea_tree_sapling": "Саженец чайно-дерева",
+
   "block.tea_mod_from_runny.tea_leaves": "Чайная листва",
   "block.tea_mod_from_runny.dry_tea_leaves": "Высушенная чайная листва",
-  "block.tea_mod_from_runny.tea_stone_ore": "Чайно-каменная руда",
+
   "block.tea_mod_from_runny.tea_stone_block": "Чайно-каменный блок",
-  "block.tea_mod_from_runny.tea_tree_sapling": "Саженец чайно-дерева",
-  "block.tea_mod_from_runny:tea_slag_block": "Блок чайного шлака>",
-  "block.tea_mod_from_runny:stone_manganite_ore": "Манганитовая руда",
-  "block.tea_mod_from_runny:deepslate_manganite_ore": "Глубинно-сланцквая манганитовая руда",
-  "block.tea_mod_from_runny:netherrack_manganite_ore": "Незераковская манганитовая руда",
-  "block.tea_mod_from_runny:end_manganite_ore": "Манганитовая руда в камне края",
-  "block.tea_mod_from_runny:manganite_block": "Манганитовый блок",
+  "block.tea_mod_from_runny.tea_slag_block": "Блок чайного шлака",
+  "block.tea_mod_from_runny.manganite_block": "Манганитовый блок",
+
+  "block.tea_mod_from_runny.tea_stone_ore": "Чайно-каменная руда",
+  "block.tea_mod_from_runny.stone_manganite_ore": "Манганитовая руда",
+  "block.tea_mod_from_runny.deepslate_manganite_ore": "Манганитоносный глубинный сланец",
+  "block.tea_mod_from_runny.netherrack_manganite_ore": "Незерская манганитовая руда",
+  "block.tea_mod_from_runny.end_manganite_ore": "Манганитоносный камень края",
+
+  "block.tea_mod_from_runny.tea_planks_stairs": "Чайные ступеньки",
+  "block.tea_mod_from_runny.tea_planks_door": "Чайная дверь",
+  "block.tea_mod_from_runny.tea_trapdoor": "Чайный люк",
+  "block.tea_mod_from_runny.tea_button": "Чайная кнопка",
+  "block.tea_mod_from_runny.tea_planks_fence": "Чайный забор",
+  "block.tea_mod_from_runny.tea_planks_gate_fence": "Чайная калитка",
+  "block.tea_mod_from_runny.tea_planks_wall": "Ограда из чайного дерева",
+  "block.tea_mod_from_runny.tea_planks_slab": "Чайная плита",
+  "block.tea_mod_from_runny.tea_pressure_plate": "Чайная нажимная плита",
 
   "item.tea_mod_from_runny.wooden_tea_cutter": "Деревянный чайный-нож",
   "item.tea_mod_from_runny.stone_tea_cutter": "Каменный чайный-нож",
@@ -44,12 +58,25 @@
   "item.tea_mod_from_runny.golden_tea_cutter": "Золотой чайный-нож",
   "item.tea_mod_from_runny.diamond_tea_cutter": "Алмазный чайный-нож",
   "item.tea_mod_from_runny.netherite_tea_cutter": "Незеритовый чайный-нож",
+  "item.tea_mod_from_runny.manganite_tea_cutter": "Манганитовый чайный-нож",
 
   "item.tea_mod_from_runny.manganite_axe": "Манганитовый топор",
-  "item.tea_mod_from_runny.manganite_hoe": "Манганитовая тяпка",
+  "item.tea_mod_from_runny.manganite_hoe": "Манганитовая мотыга",
   "item.tea_mod_from_runny.manganite_pickaxe": "Манганитовая кирка",
   "item.tea_mod_from_runny.manganite_shovel": "Манганитовая лопата",
   "item.tea_mod_from_runny.manganite_sword": "Манганитовый меч",
+  "item.tea_mod_from_runny.manganite_helmet": "Манганитовый шлем",
+  "item.tea_mod_from_runny.manganite_chestplate": "Манганитовая кираса",
+  "item.tea_mod_from_runny.manganite_leggings": "Манганитовые поножи",
+  "item.tea_mod_from_runny.manganite_boots": "Манганитовые ботинки",
+  "item.tea_mod_from_runny.manganite_upgrade_smithing_template": "Шаблон улучшения до уровня Манганит",
+
+  "item.tea_mod_from_runny.test_tool": "Тестовый инструмент",
+
+  "block.tea_mod_from_runny.test_block": "Тестовый блок",
+  "block.tea_mod_from_runny.sound_block": "Тестовый звуковой блок",
+
+  "tooltip.tea_mod_from_runny.tea_cutter.tooltip": "Нажми ПКМ по Чайной листве и получи немного чайных листьев!",
 
   "creativetab.tea_mod_from_runny": "Tea mod from Runny"
 }

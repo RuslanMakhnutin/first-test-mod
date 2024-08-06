@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:diamond"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#/",
+    "#/",
+    "#/"
+  ],
+  "result": {
+    "item": "tea_mod_from_runny:diamond_tea_cutter"
+  },
+  "show_notification": true
+}

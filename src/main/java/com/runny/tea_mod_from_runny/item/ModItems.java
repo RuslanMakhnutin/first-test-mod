@@ -2,7 +2,6 @@ package com.runny.tea_mod_from_runny.item;
 
 import com.runny.tea_mod_from_runny.TeaModFromRunny;
 import com.runny.tea_mod_from_runny.item.custom.*;
-import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -21,6 +20,8 @@ public class ModItems {
     public static final RegistryObject<Item> TEA_STONE = ITEMS.register("tea_stone", // Add - Tea-stone
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> MANGANITE = ITEMS.register("manganite", // Add - Tea-stone
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MANGANITE_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("manganite_upgrade_smithing_template", // Add - Tea-stone
             () -> new Item(new Item.Properties()));
 
     // Cups
@@ -70,28 +71,40 @@ public class ModItems {
             () -> new TeaCutterItem(new Item.Properties().stacksTo(1).durability(1561)));
     public static final RegistryObject<Item> NETHERITE_TEA_CUTTER = ITEMS.register("netherite_tea_cutter", // Add netherite tea-cutter
             () -> new TeaCutterItem(new Item.Properties().stacksTo(1).durability(2031)));
+    public static final RegistryObject<Item> MANGANITE_TEA_CUUTER = ITEMS.register("manganite_tea_cutter", // Add manganite tea-cutter
+            () -> new TeaCutterItem(new Item.Properties().stacksTo(1).durability(2539)));
 
     // Fuel
-    public static final RegistryObject<Item> TEA_SLUG = ITEMS.register("tea_slag", // Add tea-slag fuel
+    public static final RegistryObject<Item> TEA_SLAG = ITEMS.register("tea_slag", // Add tea-slag fuel
             () -> new FuelItem(new Item.Properties(), 100));
 
 
     // Manganite tools
-    public static final RegistryObject<Item> MANGANITE_SWORD = ITEMS.register("manganite_sword", // Add - test-tool
-            () -> new SwordItem(ModToolTiers.MANGANITE, 6, 11.5f,
+    public static final RegistryObject<Item> MANGANITE_SWORD = ITEMS.register("manganite_sword", // Add - manganite sword
+            () -> new SwordItem(ModToolTiers.MANGANITE, 3, -2.4f,
                     new Item.Properties()));
-    public static final RegistryObject<Item> MANGANITE_PICKAXE = ITEMS.register("manganite_pickaxe", // Add - test-tool
-            () -> new PickaxeItem(ModToolTiers.MANGANITE, 6, 11.5f,
+    public static final RegistryObject<Item> MANGANITE_PICKAXE = ITEMS.register("manganite_pickaxe", // Add - manganite pickaxe
+            () -> new PickaxeItem(ModToolTiers.MANGANITE, 1, -2.8f,
                     new Item.Properties()));
-    public static final RegistryObject<Item> MANGANITE_AXE = ITEMS.register("manganite_axe", // Add - test-tool
-            () -> new AxeItem(ModToolTiers.MANGANITE, 6, 11.5f,
+    public static final RegistryObject<Item> MANGANITE_AXE = ITEMS.register("manganite_axe", // Add - manganite axe
+            () -> new AxeItem(ModToolTiers.MANGANITE, 5, -2.8f,
                     new Item.Properties()));
-    public static final RegistryObject<Item> MANGANITE_HOE = ITEMS.register("manganite_hoe", // Add - test-tool
-            () -> new HoeItem(ModToolTiers.MANGANITE, 6, 11.5f,
+    public static final RegistryObject<Item> MANGANITE_HOE = ITEMS.register("manganite_hoe", // Add - manganite hoe
+            () -> new HoeItem(ModToolTiers.MANGANITE, -6, 0,
                     new Item.Properties()));
-    public static final RegistryObject<Item> MANGANITE_SHOVEL = ITEMS.register("manganite_shovel", // Add - test-tool
-            () -> new ShovelItem(ModToolTiers.MANGANITE, 6, 11.5f,
+    public static final RegistryObject<Item> MANGANITE_SHOVEL = ITEMS.register("manganite_shovel", // Add - manganite shovel
+            () -> new ShovelItem(ModToolTiers.MANGANITE, 1.5f, -3,
                     new Item.Properties()));
+
+    // Manganite armor
+    public static final RegistryObject<Item> MANGANITE_HELMET = ITEMS.register("manganite_helmet", // Add - manganite helmet
+            () -> new ArmorItem(ModArmorMaterials.MANGANITE, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> MANGANITE_CHESTPLATE = ITEMS.register("manganite_chestplate", // Add - manganite chestplate
+            () -> new ArmorItem(ModArmorMaterials.MANGANITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> MANGANITE_LEGGINGS = ITEMS.register("manganite_leggings", // Add - manganite leggings
+            () -> new ArmorItem(ModArmorMaterials.MANGANITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> MANGANITE_BOOTS = ITEMS.register("manganite_boots", // Add - manganite boots
+            () -> new ArmorItem(ModArmorMaterials.MANGANITE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     // Test
     public static final RegistryObject<Item> TEST_TOOL = ITEMS.register("test_tool", // Add - test-tool

@@ -23,7 +23,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.FRESH_TEA_LEAF.get());
                         output.accept(ModItems.DRY_TEA_LEAF.get());
                         output.accept(ModItems.TEA_STONE.get());
-                        output.accept(ModItems.TEA_SLUG.get());
+                        output.accept(ModItems.TEA_SLAG.get());
 
                         // Cups
                         output.accept(ModItems.CUP.get());
@@ -73,6 +73,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.GOLDEN_TEA_CUTTER.get());
                         output.accept(ModItems.DIAMOND_TEA_CUTTER.get());
                         output.accept(ModItems.NETHERITE_TEA_CUTTER.get());
+                        output.accept(ModItems.MANGANITE_TEA_CUUTER.get());
 
                         // Decor
                         output.accept(ModBlock.TEA_PLANKS_STAIRS.get());
@@ -81,7 +82,7 @@ public class ModCreativeModTabs {
                         output.accept(ModBlock.TEA_BUTTON.get());
                         output.accept(ModBlock.TEA_PLANKS_FENCE.get());
                         output.accept(ModBlock.TEA_PLANKS_GATE_FENCE.get());
-                        output.accept(ModBlock.TEA_PLANKS_WALL.get());
+                        output.accept(ModBlock.TEA_LOG_WALL.get());
                         output.accept(ModBlock.TEA_PLANKS_SLAB.get());
                         output.accept(ModBlock.TEA_PRESSURE_PLATE.get());
 
@@ -92,6 +93,7 @@ public class ModCreativeModTabs {
                         output.accept(ModBlock.NETHERRACK_MANGANITE_ORE.get());
                         output.accept(ModBlock.END_MANGANITE_ORE.get());
                         output.accept(ModItems.MANGANITE.get());
+                        output.accept(ModItems.MANGANITE_UPGRADE_SMITHING_TEMPLATE.get());
 
                         // Manganite-Tools
                         output.accept(ModItems.MANGANITE_SWORD.get());
@@ -99,6 +101,12 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.MANGANITE_AXE.get());
                         output.accept(ModItems.MANGANITE_PICKAXE.get());
                         output.accept(ModItems.MANGANITE_SHOVEL.get());
+
+                        // Manganite-Armor
+                        output.accept(ModItems.MANGANITE_HELMET.get());
+                        output.accept(ModItems.MANGANITE_CHESTPLATE.get());
+                        output.accept(ModItems.MANGANITE_LEGGINGS.get());
+                        output.accept(ModItems.MANGANITE_BOOTS.get());
 
                         // Test
                         output.accept(ModItems.TEST_TOOL.get());

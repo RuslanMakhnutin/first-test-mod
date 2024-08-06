@@ -7,6 +7,7 @@ import com.runny.tea_mod_from_runny.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -26,5 +27,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.TEA_STONE.get(),
                         ModItems.DRY_TEA_LEAF.get()
                 );
+
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.MANGANITE_HELMET.get(),
+                        ModItems.MANGANITE_CHESTPLATE.get(),
+                        ModItems.MANGANITE_LEGGINGS.get(),
+                        ModItems.MANGANITE_BOOTS.get());
     }
 }

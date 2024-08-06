@@ -20,6 +20,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+
         this.tag(ModTags.Blocks.TEST_TOOL_VALUABLES)
                 .add(ModBlock.TEA_STONE_ORE.get())
                 .add(ModBlock.STONE_MANGANITE_ORE.get())
@@ -75,7 +76,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.FENCE_GATES)
                 .add(ModBlock.TEA_PLANKS_GATE_FENCE.get());
         this.tag(BlockTags.WALLS)
-                .add(ModBlock.TEA_PLANKS_WALL.get());
+                .add(ModBlock.TEA_LOG_WALL.get());
         this.tag(BlockTags.TRAPDOORS)
                 .add(ModBlock.TEA_TRAPDOOR.get());
 

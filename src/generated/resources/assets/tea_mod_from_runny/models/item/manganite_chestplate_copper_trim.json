@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tea_mod_from_runny:item/manganite_chestplate",
+    "layer1": "minecraft:trims/items/chestplate_trim_copper"
+  }
+}

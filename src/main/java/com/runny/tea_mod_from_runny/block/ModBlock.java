@@ -43,7 +43,7 @@ public class ModBlock {
     public static final RegistryObject<Block> TEA_TREE_PLANKS = registryBlock("tea_tree_planks", // Add - Tea tree planks
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
     public static final RegistryObject<Block> TEA_SLAG_BLOCK = registryBlock("tea_slag_block", // Add - Tea slag block
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SAND)));
+            () -> new SandBlock(1,BlockBehaviour.Properties.copy(Blocks.SAND)));
 
     public static final RegistryObject<Block> TEST_BLOCK = registryBlock("test_block", // Add - Test block
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().noLootTable()));
@@ -68,7 +68,7 @@ public class ModBlock {
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
     public static final RegistryObject<Block> TEA_PLANKS_GATE_FENCE = registryBlock("tea_planks_gate_fence", // Add - Gate-Fence of tea planks
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
-    public static final RegistryObject<Block> TEA_PLANKS_WALL = registryBlock("tea_planks_wall", // Add - Wall of tea planks
+    public static final RegistryObject<Block> TEA_LOG_WALL = registryBlock("tea_planks_wall", // Add - Wall of tea planks
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
     public static final RegistryObject<Block> TEA_PLANKS_DOOR = registryBlock("tea_planks_door", // Add - Door of tea planks
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion(),BlockSetType.OAK));

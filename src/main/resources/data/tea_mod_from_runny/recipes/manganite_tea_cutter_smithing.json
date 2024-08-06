@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "tea_mod_from_runny:manganite"
+  },
+  "base": {
+    "item": "tea_mod_from_runny:netherite_tea_cutter"
+  },
+  "result": {
+    "item": "tea_mod_from_runny:manganite_tea_cutter"
+  },
+  "template": {
+    "item": "tea_mod_from_runny:manganite_upgrade_smithing_template"
+  }
+}

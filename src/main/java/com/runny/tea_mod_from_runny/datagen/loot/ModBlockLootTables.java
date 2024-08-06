@@ -36,7 +36,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlock.TEA_SLAG_BLOCK.get());
         this.dropSelf(ModBlock.TEA_PLANKS_FENCE.get());
         this.dropSelf(ModBlock.TEA_PLANKS_GATE_FENCE.get());
-        this.dropSelf(ModBlock.TEA_PLANKS_WALL.get());
+        this.dropSelf(ModBlock.TEA_LOG_WALL.get());
         this.dropSelf(ModBlock.TEA_TRAPDOOR.get());
         this.dropSelf(ModBlock.TEA_BUTTON.get());
         this.dropSelf(ModBlock.TEA_PLANKS_STAIRS.get());
