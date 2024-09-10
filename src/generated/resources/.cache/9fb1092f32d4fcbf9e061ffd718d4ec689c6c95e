@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-06T16:38:58.0256597	Recipes
+// 1.20.1	2024-08-27T21:13:23.1881999	Recipes
 dc377cf448c93ab7e8bad29abcb7a39905077d47 data/tea_mod_from_runny/advancements/recipes/misc/cup.json
 8c8bdb805dabdda8ab8ae2916769c38a32d67568 data/tea_mod_from_runny/advancements/recipes/misc/cup_classic_tea.json
 3dee7efdce6e5e29870e29c1a1fd2ad60872552f data/tea_mod_from_runny/advancements/recipes/misc/cup_glow_berries_tea.json
@@ -61,7 +61,7 @@ b59cdf3de5d4e2966a043ff5199984eab31a7ab0 data/tea_mod_from_runny/recipes/mangani
 1ecf9ab7d15eeedea014c613625a6467e3c67d99 data/tea_mod_from_runny/recipes/manganite_pickaxe.json
 3e6feee6c2d82880ad1f722d7df9296a3bb07d39 data/tea_mod_from_runny/recipes/manganite_shovel.json
 799e1108f9f7582d62684dffc3ed028708f5951d data/tea_mod_from_runny/recipes/manganite_sword.json
-97ce03ca3db7568e6889b6a3658003022f450c52 data/tea_mod_from_runny/recipes/manganite_upgrade_smithing_template.json
+89e532daa6b7335960b41b0e2b78feb693ef1eb2 data/tea_mod_from_runny/recipes/manganite_upgrade_smithing_template.json
 691ed1c86166f487412bf40cfcf5c3a9b32cf636 data/tea_mod_from_runny/recipes/stone_tea_cutter.json
 3b50763c136826b8900fa0d934e7f4d0deb2671c data/tea_mod_from_runny/recipes/tea_button.json
 45a4f361c497970983def303761f1a2f37699bf2 data/tea_mod_from_runny/recipes/tea_leaves.json

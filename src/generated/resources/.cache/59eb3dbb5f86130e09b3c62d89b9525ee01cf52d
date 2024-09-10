@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-06T02:01:18.4492805	Loot Tables
+// 1.20.1	2024-08-28T20:15:13.4434083	Loot Tables
 8b6b70e61da39c22e3db29ec077815ffb4d23e4b data/tea_mod_from_runny/loot_tables/blocks/deepslate_manganite_ore.json
 8fb357671c0a42b09d6da1b4642ae543ac12f5ac data/tea_mod_from_runny/loot_tables/blocks/dry_tea_leaves.json
 b60be7357a82bff9819428b6f5b9b87f86c2136a data/tea_mod_from_runny/loot_tables/blocks/end_manganite_ore.json
@@ -9,6 +9,7 @@ e0ec6040047202ae60067f1e04f313d69d78cb96 data/tea_mod_from_runny/loot_tables/blo
 d8f2e3e025116b9c980cf8418e6ea533ffce0315 data/tea_mod_from_runny/loot_tables/blocks/stripped_tea_tree_log.json
 a52dd013fd4418b5ee49609ad6f11affff0dbe63 data/tea_mod_from_runny/loot_tables/blocks/stripped_tea_tree_wood.json
 f35ac6f2b02520bd3b6792f6737336aaf9aacda3 data/tea_mod_from_runny/loot_tables/blocks/tea_button.json
+cc2f6ca3460424a40bffaedea25e9bc826cacf12 data/tea_mod_from_runny/loot_tables/blocks/tea_crop.json
 bd22b08e46e3af7b096c119c03ece0a831c316ce data/tea_mod_from_runny/loot_tables/blocks/tea_leaves.json
 33495dae8af56c9b9b7a94dafa89513d32956917 data/tea_mod_from_runny/loot_tables/blocks/tea_planks_door.json
 e5611982d85f71669190d9a59ccfa1168ef0b5ea data/tea_mod_from_runny/loot_tables/blocks/tea_planks_fence.json

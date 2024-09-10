@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import com.runny.tea_mod_from_runny.block.ModBlock;
 import com.runny.tea_mod_from_runny.item.ModCreativeModTabs;
 import com.runny.tea_mod_from_runny.item.ModItems;
+import com.runny.tea_mod_from_runny.loot.ModLootModifiers;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
@@ -30,6 +31,8 @@ public class TeaModFromRunny {
         ModCreativeModTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlock.register(modEventBus);
+
+        ModLootModifiers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

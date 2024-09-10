@@ -1,6 +1,7 @@
 package com.runny.tea_mod_from_runny.item;
 
 import com.runny.tea_mod_from_runny.TeaModFromRunny;
+import com.runny.tea_mod_from_runny.block.ModBlock;
 import com.runny.tea_mod_from_runny.item.custom.*;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,6 +24,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> MANGANITE_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("manganite_upgrade_smithing_template", // Add - Tea-stone
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TEA_SEEDS = ITEMS.register("tea_seeds", // Add - Tea-stone
+            () -> new ItemNameBlockItem(ModBlock.TEA_CROP.get(), new Item.Properties()));
 
     // Cups
     public static final RegistryObject<Item> CUP = ITEMS.register("cup", // Add - cup

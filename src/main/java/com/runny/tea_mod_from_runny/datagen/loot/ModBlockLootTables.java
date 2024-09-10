@@ -1,7 +1,9 @@
 package com.runny.tea_mod_from_runny.datagen.loot;
 
 import com.runny.tea_mod_from_runny.block.ModBlock;
+import com.runny.tea_mod_from_runny.block.custom.TeaCropBlock;
 import com.runny.tea_mod_from_runny.item.ModItems;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
@@ -11,6 +13,8 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -61,6 +65,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createCopperLikeOreDrops(ModBlock.END_MANGANITE_ORE.get(), ModItems.MANGANITE.get(), 1.0f, 4.0f));
         this.add(ModBlock.TEA_LEAVES.get(),
                 block -> createCopperLikeOreDrops(ModBlock.TEA_LEAVES.get(), ModItems.FRESH_TEA_LEAF.get(), 0.0f, 3.0f));
+
+        LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlock.TEA_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(TeaCropBlock.AGE, 5));
+
+        this.add(ModBlock.TEA_CROP.get(), createCropDrops(ModBlock.TEA_CROP.get(), ModItems.FRESH_TEA_LEAF.get(),
+                ModItems.TEA_SEEDS.get(), lootitemcondition$builder));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item, float dropsMin, float dropsMax) {

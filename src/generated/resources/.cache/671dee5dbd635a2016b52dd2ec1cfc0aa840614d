@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-06T18:05:19.6109614	Item Models: tea_mod_from_runny
+// 1.20.1	2024-08-28T20:15:13.4404049	Item Models: tea_mod_from_runny
 0e7de9add06520e89ea4b1e441cd67fa17b584c9 assets/tea_mod_from_runny/models/item/deepslate_manganite_ore.json
 2f7ae8f63c674708219bf380a59ad327e7ce0d85 assets/tea_mod_from_runny/models/item/diamond_tea_cutter.json
 fe278bf9d0b6836bad527ba85c965b4ef5aa2236 assets/tea_mod_from_runny/models/item/dry_tea_leaf.json
@@ -77,6 +77,7 @@ def78fa4bc367e54dc398ffdee2aaa5afd24a741 assets/tea_mod_from_runny/models/item/t
 5feac0b2d479afa6cc055ae30243eb632cd5a357 assets/tea_mod_from_runny/models/item/tea_pot_sweet_berries_tea.json
 9c2dc5d76419d4da8029f4c43397d53410458e9f assets/tea_mod_from_runny/models/item/tea_pot_tea_stone_tea.json
 9f98e6a09cd428aa48472ba1ac01744457d42344 assets/tea_mod_from_runny/models/item/tea_pressure_plate.json
+24f2564d508821594a0e5261300a51302b2d9797 assets/tea_mod_from_runny/models/item/tea_seeds.json
 b3fd53a064ea47ac699609316263714fc23fcf57 assets/tea_mod_from_runny/models/item/tea_slag.json
 5e134e8bbfa1605e360a1cc067d4c70ec54ca468 assets/tea_mod_from_runny/models/item/tea_stone.json
 224cf0a654e25135756258e6db1e6f7ad7b80cb3 assets/tea_mod_from_runny/models/item/tea_trapdoor.json

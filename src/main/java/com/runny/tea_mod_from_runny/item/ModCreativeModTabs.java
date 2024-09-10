@@ -24,6 +24,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.DRY_TEA_LEAF.get());
                         output.accept(ModItems.TEA_STONE.get());
                         output.accept(ModItems.TEA_SLAG.get());
+                        output.accept(ModItems.TEA_SEEDS.get());
 
                         // Cups
                         output.accept(ModItems.CUP.get());

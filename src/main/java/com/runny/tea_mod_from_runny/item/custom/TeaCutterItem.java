@@ -1,6 +1,7 @@
 package com.runny.tea_mod_from_runny.item.custom;
 
 import com.runny.tea_mod_from_runny.block.ModBlock;
+import com.runny.tea_mod_from_runny.block.custom.TeaCropBlock;
 import com.runny.tea_mod_from_runny.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -66,4 +67,8 @@ public class TeaCutterItem extends Item {
     private boolean isTeaLeaves(BlockState state) {
         return state.is(ModBlock.TEA_LEAVES.get());
     }
+
+//    private boolean isGrown(TeaCropBlock age, BlockState state){
+//        return age.isMaxAge(state);
+//    }
 }

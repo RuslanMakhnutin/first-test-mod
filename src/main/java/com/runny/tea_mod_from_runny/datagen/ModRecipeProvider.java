@@ -336,13 +336,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#T#")
                 .pattern("#B#")
                 .pattern("###")
-                .define('#', Items.DIAMOND)
+                .define('#', ModItems.MANGANITE.get())
                 .define('T', ModItems.MANGANITE_UPGRADE_SMITHING_TEMPLATE.get())
                 .define('B', Blocks.END_STONE)
                 .unlockedBy(getHasName(ModItems.MANGANITE_UPGRADE_SMITHING_TEMPLATE.get()),
                         has(ModItems.MANGANITE_UPGRADE_SMITHING_TEMPLATE.get()))
                 .save(pWriter);
-
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TEA_STONE.get(), 9)
                 .requires(ModBlock.TEA_STONE_BLOCK.get())

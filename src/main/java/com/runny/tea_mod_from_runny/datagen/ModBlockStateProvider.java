@@ -2,11 +2,17 @@ package com.runny.tea_mod_from_runny.datagen;
 
 import com.runny.tea_mod_from_runny.TeaModFromRunny;
 import com.runny.tea_mod_from_runny.block.ModBlock;
+import com.runny.tea_mod_from_runny.block.custom.TeaCropBlock;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.function.Function;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -52,7 +58,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         // Doors
         doorBlockWithRenderType((DoorBlock) ModBlock.TEA_PLANKS_DOOR.get(), modLoc("block/tea_planks_door_bottom"),
-                modLoc("block/tea_planks_door_top"),"cutout");
+                modLoc("block/tea_planks_door_top"), "cutout");
         trapdoorBlockWithRenderType((TrapDoorBlock) ModBlock.TEA_TRAPDOOR.get(), modLoc("block/tea_trapdoor"), true, "cutout");
 
         // Ores
@@ -64,7 +70,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         // Test
         blockWithItem(ModBlock.SOUND_BLOCK);
         blockWithItem(ModBlock.TEST_BLOCK);
-    }
+
+        // Crops
+        makeTeaCrop((CropBlock) ModBlock.TEA_CROP.get(), "tea_stage", "tea_stage");}
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
@@ -77,4 +85,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void blockOfSapling(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
+
+    public void makeTeaCrop(CropBlock block, String modelName, String textureName){
+        Function<BlockState, ConfiguredModel[]> function = state -> teaStates(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] teaStates(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((TeaCropBlock) block).getAgeProperty()),
+                new ResourceLocation(TeaModFromRunny.mod_id, "block/" + textureName + state.getValue(((TeaCropBlock) block)
+                        .getAgeProperty()))).renderType("cutout"));
+
+        return models;
+    }
+
 }

@@ -2,6 +2,7 @@ package com.runny.tea_mod_from_runny.block;
 
 import com.runny.tea_mod_from_runny.TeaModFromRunny;
 import com.runny.tea_mod_from_runny.block.custom.SoundBlock;
+import com.runny.tea_mod_from_runny.block.custom.TeaCropBlock;
 import com.runny.tea_mod_from_runny.item.ModItems;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -86,6 +87,10 @@ public class ModBlock {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<Block> END_MANGANITE_ORE = registryBlock("end_manganite_ore", // Add - manganite block
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
+
+
+    public static final RegistryObject<Block> TEA_CROP = BLOCKS.register("tea_crop", // Add - tea agriculture
+            () -> new TeaCropBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noOcclusion().noCollission()));
 
 
     private  static  <T extends Block> RegistryObject<T> registryBlock(String name, Supplier<T> block) {

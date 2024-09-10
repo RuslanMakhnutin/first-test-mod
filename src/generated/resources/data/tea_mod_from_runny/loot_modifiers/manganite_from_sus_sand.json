@@ -1,0 +1,10 @@
+{
+  "type": "tea_mod_from_runny:add_sus_sand_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:archaeology/desert_pyramid"
+    }
+  ],
+  "item": "tea_mod_from_runny:manganite"
+}

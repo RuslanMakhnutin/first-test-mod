@@ -48,6 +48,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.DRY_TEA_LEAF);
         simpleItem(ModItems.FRESH_TEA_LEAF);
         simpleItem(ModItems.MANGANITE);
+        simpleItem(ModItems.TEA_SEEDS);
 
         simpleItem(ModItems.UNFIRED_TEA_POT);
         simpleItem(ModItems.EMPTY_TEA_POT);
