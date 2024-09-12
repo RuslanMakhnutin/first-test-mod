@@ -6,8 +6,10 @@ import com.runny.tea_mod_from_runny.block.custom.TeaCropBlock;
 import com.runny.tea_mod_from_runny.item.ModItems;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.LightLayer;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
@@ -48,9 +50,11 @@ public class ModBlock {
 
     public static final RegistryObject<Block> TEST_BLOCK = registryBlock("test_block", // Add - Test block
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().noLootTable()));
-
     public static final RegistryObject<Block> SOUND_BLOCK = registryBlock("sound_block", // Add - Test block
             () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)));
+
+    public static final RegistryObject<Block> TEA_DRYER = registryBlock("tea_dryer", // Add - tea dryer
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE)));
 
     public static final RegistryObject<Block> TEA_PLANKS_STAIRS = registryBlock("tea_planks_stairs", // Add - stairs from tea planks
             () -> new StairBlock(() -> ModBlock.TEA_TREE_PLANKS.get().defaultBlockState(),
@@ -88,9 +92,15 @@ public class ModBlock {
     public static final RegistryObject<Block> END_MANGANITE_ORE = registryBlock("end_manganite_ore", // Add - manganite block
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
 
-
     public static final RegistryObject<Block> TEA_CROP = BLOCKS.register("tea_crop", // Add - tea agriculture
             () -> new TeaCropBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noOcclusion().noCollission()));
+
+    public static final RegistryObject<Block> TEA_MUSHROOM = registryBlock("tea_mushroom", // Add - Tea mushroom
+            () -> new FlowerBlock(() -> MobEffects.JUMP, 5,
+                    BlockBehaviour.Properties.copy(Blocks.BROWN_MUSHROOM).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> POTTED_TEA_MUSHROOM = BLOCKS.register("potted_tea_mushroom", // Add - Tea mushroom in pot
+            () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlock.TEA_MUSHROOM,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_BROWN_MUSHROOM).noOcclusion()));
 
 
     private  static  <T extends Block> RegistryObject<T> registryBlock(String name, Supplier<T> block) {

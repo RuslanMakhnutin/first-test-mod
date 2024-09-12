@@ -67,8 +67,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.NETHERITE_TEA_CUTTER);
         simpleItem(ModItems.MANGANITE_TEA_CUUTER);
 
-        simpleItem(ModItems.TEST_TOOL);
-
         simpleBlockItem(ModBlock.TEA_PLANKS_DOOR);
 
         fenceItem(ModBlock.TEA_PLANKS_FENCE, ModBlock.TEA_TREE_PLANKS);
@@ -85,6 +83,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlock.NETHERRACK_MANGANITE_ORE);
         evenSimplerBlockItem(ModBlock.END_MANGANITE_ORE);
         evenSimplerBlockItem(ModBlock.MANGANITE_BLOCK);
+        evenSimplerBlockItem(ModBlock.TEA_DRYER);
 
         handHeldItem(ModItems.MANGANITE_SWORD);
         handHeldItem(ModItems.MANGANITE_AXE);
@@ -97,6 +96,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.MANGANITE_CHESTPLATE);
         trimmedArmorItem(ModItems.MANGANITE_LEGGINGS);
         trimmedArmorItem(ModItems.MANGANITE_BOOTS);
+
+        simpleBlockItemBlockTexture(ModBlock.TEA_MUSHROOM);
+
+        simpleItem(ModItems.TEST_TOOL);
     }
 
     // Thx to El_Redstoniano for making this
@@ -177,6 +180,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(TeaModFromRunny.mod_id, "item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder simpleBlockItemBlockTexture(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(TeaModFromRunny.mod_id, "block/" + item.getId().getPath()));
     }
 
     public void evenSimplerBlockItem(RegistryObject<Block> block) {

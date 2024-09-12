@@ -86,6 +86,7 @@ public class ModCreativeModTabs {
                         output.accept(ModBlock.TEA_LOG_WALL.get());
                         output.accept(ModBlock.TEA_PLANKS_SLAB.get());
                         output.accept(ModBlock.TEA_PRESSURE_PLATE.get());
+                        output.accept(ModBlock.TEA_DRYER.get());
 
                         // Manganite
                         output.accept(ModBlock.MANGANITE_BLOCK.get());
@@ -108,6 +109,9 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.MANGANITE_CHESTPLATE.get());
                         output.accept(ModItems.MANGANITE_LEGGINGS.get());
                         output.accept(ModItems.MANGANITE_BOOTS.get());
+
+                        // Mushroom
+                        output.accept(ModBlock.TEA_MUSHROOM.get());
 
                         // Test
                         output.accept(ModItems.TEST_TOOL.get());

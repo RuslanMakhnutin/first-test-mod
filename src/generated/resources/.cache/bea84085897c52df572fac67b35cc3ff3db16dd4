@@ -1,7 +1,7 @@
-// 1.20.1	2024-08-06T16:24:25.2233214	Tags for minecraft:block mod id tea_mod_from_runny
+// 1.20.1	2024-09-12T18:57:01.8338635	Tags for minecraft:block mod id tea_mod_from_runny
 933a705e719465f768f4ad7bb795d274c5282d5d data/minecraft/tags/blocks/fences.json
 bf14b9f769b3058c9b744bcffcb36d1d5cfb00a5 data/minecraft/tags/blocks/fence_gates.json
-0e6119008a773b3cfb0080f325d349850a459dab data/minecraft/tags/blocks/mineable/axe.json
+5d1cce38ed81203a8d2e62b6885c60f67a908f59 data/minecraft/tags/blocks/mineable/axe.json
 8f8c92765f86cfe60c89aa0e5f56c75b14eb1730 data/minecraft/tags/blocks/mineable/hoe.json
 74af3e02510d4845a1f0302b36085c13cbd27681 data/minecraft/tags/blocks/mineable/pickaxe.json
 73c4cf467e86fef7e987a029ba2081d25c6d4681 data/minecraft/tags/blocks/mineable/shovel.json

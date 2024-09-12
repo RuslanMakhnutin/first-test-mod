@@ -8,6 +8,8 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.nbt.Tag;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
@@ -30,6 +32,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
+
+//    public static TagKey<Item>(){
+//        return ItemTags.PLANKS;
+//    }
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
@@ -187,8 +193,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("# #")
                 .pattern("# #")
                 .pattern(" # ")
-                .define('#', ModBlock.TEA_TREE_PLANKS.get())
-                .unlockedBy(getHasName(ModBlock.TEA_TREE_PLANKS.get()), has(ModBlock.TEA_TREE_PLANKS.get()))
+                .define('#', ItemTags.PLANKS)
+                .unlockedBy(getHasName(ModItems.CUP.get()), has(ModItems.CUP.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlock.TEA_DRYER.get(), 1)
+                .pattern("//")
+                .pattern("##")
+                .define('#', ItemTags.PLANKS)
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(ModItems.FRESH_TEA_LEAF.get()), has(ModItems.FRESH_TEA_LEAF.get()))
+                .unlockedBy(getHasName(Items.STICK), has(Items.STICK))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlock.TEA_PLANKS_STAIRS.get(), 4)

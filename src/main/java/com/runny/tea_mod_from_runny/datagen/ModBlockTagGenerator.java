@@ -60,7 +60,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlock.STRIPPED_TEA_TREE_LOG.get(),
                         ModBlock.TEA_TREE_WOOD.get(),
                         ModBlock.STRIPPED_TEA_TREE_WOOD.get(),
-                        ModBlock.TEA_TREE_PLANKS.get()
+                        ModBlock.TEA_TREE_PLANKS.get(),
+                        ModBlock.TEA_DRYER.get()
                         );
 
         this.tag(BlockTags.MINEABLE_WITH_HOE)

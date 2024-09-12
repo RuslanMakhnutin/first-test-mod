@@ -71,8 +71,9 @@
   "item.tea_mod_from_runny.manganite_boots": "Манганитовые ботинки",
   "item.tea_mod_from_runny.manganite_upgrade_smithing_template": "Шаблон улучшения до уровня Манганит",
 
-  "item.tea_mod_from_runny.test_tool": "Тестовый инструмент",
+  "block.tea_mod_from_runny.tea_mushroom": "Чайногриб",
 
+  "item.tea_mod_from_runny.test_tool": "Тестовый инструмент",
   "block.tea_mod_from_runny.test_block": "Тестовый блок",
   "block.tea_mod_from_runny.sound_block": "Тестовый звуковой блок",
 

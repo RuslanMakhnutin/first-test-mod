@@ -4,16 +4,17 @@
   "key": {
     "#": {
       "tag": "minecraft:planks"
+    },
+    "/": {
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
-    "# #",
-    "# #",
-    " # "
+    "//",
+    "##"
   ],
   "result": {
-    "count": 4,
-    "item": "tea_mod_from_runny:cup"
+    "item": "tea_mod_from_runny:tea_dryer"
   },
   "show_notification": true
 }

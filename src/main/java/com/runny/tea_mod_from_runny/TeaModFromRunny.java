@@ -7,6 +7,8 @@ import com.runny.tea_mod_from_runny.item.ModItems;
 import com.runny.tea_mod_from_runny.loot.ModLootModifiers;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -42,6 +44,9 @@ public class TeaModFromRunny {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(ModBlock.TEST_BLOCK.get(), RenderType.translucent()); // For test-bock glass
+        event.enqueueWork(()->{
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlock.TEA_MUSHROOM.getId(), ModBlock.POTTED_TEA_MUSHROOM);
+        });
     }
 
     // Add the example block item to the building blocks tab

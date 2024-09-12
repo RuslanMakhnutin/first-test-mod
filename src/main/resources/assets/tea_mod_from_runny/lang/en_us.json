@@ -72,8 +72,9 @@
   "item.tea_mod_from_runny.manganite_boots": "Manganite boots",
   "item.tea_mod_from_runny.manganite_upgrade_smithing_template": "Manganite upgrade template",
 
-  "item.tea_mod_from_runny.test_tool": "Test-Tool",
+  "block.tea_mod_from_runny.tea_mushroom": "Tea-mushroom",
 
+  "item.tea_mod_from_runny.test_tool": "Test-Tool",
   "block.tea_mod_from_runny.test_block": "Test-block",
   "block.tea_mod_from_runny.sound_block": "Test-sound-block",
 

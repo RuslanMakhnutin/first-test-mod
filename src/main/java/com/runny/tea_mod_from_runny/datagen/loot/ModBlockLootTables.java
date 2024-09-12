@@ -47,6 +47,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlock.TEA_PRESSURE_PLATE.get());
         this.dropSelf(ModBlock.MANGANITE_BLOCK.get());
         this.dropSelf(ModBlock.SOUND_BLOCK.get());
+        this.dropSelf(ModBlock.TEA_DRYER.get());
 
         this.add(ModBlock.TEA_PLANKS_SLAB.get(),
                 block -> createSlabItemTable(ModBlock.TEA_PLANKS_SLAB.get()));
@@ -72,6 +73,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlock.TEA_CROP.get(), createCropDrops(ModBlock.TEA_CROP.get(), ModItems.FRESH_TEA_LEAF.get(),
                 ModItems.TEA_SEEDS.get(), lootitemcondition$builder));
+
+        this.dropSelf(ModBlock.TEA_MUSHROOM.get());
+        this.add(ModBlock.POTTED_TEA_MUSHROOM.get(), createPotFlowerItemTable(ModBlock.TEA_MUSHROOM.get()));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item, float dropsMin, float dropsMax) {

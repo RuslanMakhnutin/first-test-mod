@@ -21,6 +21,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        // Station
+        blockWithItem(ModBlock.TEA_DRYER);
+
         // Stone
         blockWithItem(ModBlock.TEA_STONE_BLOCK);
         blockWithItem(ModBlock.TEA_STONE_ORE);
@@ -67,12 +70,19 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlock.NETHERRACK_MANGANITE_ORE);
         blockWithItem(ModBlock.END_MANGANITE_ORE);
 
+        // Crops
+//        makeTeaCrop((TeaCropBlock) ModBlock.TEA_CROP.get(), "tea_stage", "tea_stage");
+
+        // Mushroom
+        simpleBlockWithItem(ModBlock.TEA_MUSHROOM.get(), models().cross(blockTexture(ModBlock.TEA_MUSHROOM.get()).getPath(),
+                blockTexture(ModBlock.TEA_MUSHROOM.get())).renderType("cutout"));
+        simpleBlockWithItem(ModBlock.POTTED_TEA_MUSHROOM.get(), models().singleTexture("potteed_tea_mushroom", new ResourceLocation("flower_pot_cross"),
+                "plant", blockTexture(ModBlock.TEA_MUSHROOM.get())).renderType("cutout"));
+
         // Test
         blockWithItem(ModBlock.SOUND_BLOCK);
         blockWithItem(ModBlock.TEST_BLOCK);
-
-        // Crops
-        makeTeaCrop((CropBlock) ModBlock.TEA_CROP.get(), "tea_stage", "tea_stage");}
+    }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
@@ -86,19 +96,19 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 
-    public void makeTeaCrop(CropBlock block, String modelName, String textureName){
-        Function<BlockState, ConfiguredModel[]> function = state -> teaStates(state, block, modelName, textureName);
+//    public void makeTeaCrop(CropBlock block, String modelName, String textureName){
+//        Function<BlockState, ConfiguredModel[]> function = state -> teaStates(state, block, modelName, textureName);
+//
+//        getVariantBuilder(block).forAllStates(function);
+//    }
 
-        getVariantBuilder(block).forAllStates(function);
-    }
-
-    private ConfiguredModel[] teaStates(BlockState state, CropBlock block, String modelName, String textureName) {
-        ConfiguredModel[] models = new ConfiguredModel[1];
-        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((TeaCropBlock) block).getAgeProperty()),
-                new ResourceLocation(TeaModFromRunny.mod_id, "block/" + textureName + state.getValue(((TeaCropBlock) block)
-                        .getAgeProperty()))).renderType("cutout"));
-
-        return models;
-    }
+//    private ConfiguredModel[] teaStates(BlockState state, CropBlock block, String modelName, String textureName) {
+//        ConfiguredModel[] models = new ConfiguredModel[1];
+//        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((TeaCropBlock) block).getAgeProperty()),
+//                new ResourceLocation(TeaModFromRunny.mod_id, "block/" + textureName + state.getValue(((TeaCropBlock) block)
+//                        .getAgeProperty()))).renderType("cutout"));
+//
+//        return models;
+//    }
 
 }

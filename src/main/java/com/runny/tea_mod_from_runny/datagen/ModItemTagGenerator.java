@@ -28,10 +28,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.DRY_TEA_LEAF.get()
                 );
 
-        this.tag(ItemTags.TRIMMABLE_ARMOR)
-                .add(ModItems.MANGANITE_HELMET.get(),
-                        ModItems.MANGANITE_CHESTPLATE.get(),
-                        ModItems.MANGANITE_LEGGINGS.get(),
-                        ModItems.MANGANITE_BOOTS.get());
+        this.tag(ItemTags.TRIMMABLE_ARMOR).add(
+                ModItems.MANGANITE_HELMET.get(),
+                ModItems.MANGANITE_CHESTPLATE.get(),
+                ModItems.MANGANITE_LEGGINGS.get(),
+                ModItems.MANGANITE_BOOTS.get());
     }
 }
