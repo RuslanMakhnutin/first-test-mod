@@ -5,6 +5,7 @@ import com.runny.tea_mod_from_runny.block.ModBlock;
 import com.runny.tea_mod_from_runny.item.ModCreativeModTabs;
 import com.runny.tea_mod_from_runny.item.ModItems;
 import com.runny.tea_mod_from_runny.loot.ModLootModifiers;
+import com.runny.tea_mod_from_runny.villager.ModVillagers;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
@@ -35,6 +36,7 @@ public class TeaModFromRunny {
         ModBlock.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
+        ModVillagers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

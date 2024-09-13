@@ -78,7 +78,9 @@
   "block.tea_mod_from_runny.test_block": "Test-block",
   "block.tea_mod_from_runny.sound_block": "Test-sound-block",
 
-  "tooltip.tea_mod_from_runny.tea_cutter.tooltip": "Right-click on the Tea Leaves and get some tea leaves!  ",
+  "entity.minecraft.villager.tea_mod_from_runny.tea_picker": "Tea-Picker",
+
+  "tooltip.tea_mod_from_runny.tea_cutter.tooltip": "Right-click on the Tea Leaves and get some tea leaves!",
 
   "creativetab.tea_mod_from_runny": "Tea mod from Runny"
 }

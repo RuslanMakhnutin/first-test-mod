@@ -1,4 +1,4 @@
-// 1.20.1	2024-09-12T18:57:01.8468626	Recipes
+// 1.20.1	2024-09-13T16:09:29.0500085	Recipes
 e19152aec7634fb3af2b6570d5ee00269726b808 data/tea_mod_from_runny/advancements/recipes/misc/cup.json
 8c8bdb805dabdda8ab8ae2916769c38a32d67568 data/tea_mod_from_runny/advancements/recipes/misc/cup_classic_tea.json
 3dee7efdce6e5e29870e29c1a1fd2ad60872552f data/tea_mod_from_runny/advancements/recipes/misc/cup_glow_berries_tea.json
@@ -21,7 +21,7 @@ a881cf35305777639d2c805d1d737a9d43b37361 data/tea_mod_from_runny/advancements/re
 f20f5d4dbe6f82f5fbb1cd9e055391c89c6c28f6 data/tea_mod_from_runny/advancements/recipes/misc/manganite_upgrade_smithing_template.json
 778fd54630c710862e54387f14eb2cb0a29ed3ce data/tea_mod_from_runny/advancements/recipes/misc/stone_tea_cutter.json
 2c89673a5945b841ae11c81ee9f5ac1c8722b236 data/tea_mod_from_runny/advancements/recipes/misc/tea_button.json
-64bfe556025182ef1a3d1a493cef23b0e18fdaca data/tea_mod_from_runny/advancements/recipes/misc/tea_dryer.json
+cb3774e6e1754b5741667c60e57043b121d91f0f data/tea_mod_from_runny/advancements/recipes/misc/tea_dryer.json
 15b69c86d094f752f765ec51be7e1f8554087622 data/tea_mod_from_runny/advancements/recipes/misc/tea_leaves.json
 d4d16791dc514faf62d3b0e8a0dbb771421c192a data/tea_mod_from_runny/advancements/recipes/misc/tea_planks_door.json
 4115bdcfe28022445c024a7bf76dbc2a43c8726d data/tea_mod_from_runny/advancements/recipes/misc/tea_planks_fence.json
