@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-27T22:59:25.9936458	Global Loot Modifiers : tea_mod_from_runny
+// 1.20.1	2024-09-13T18:29:06.1004998	Global Loot Modifiers : tea_mod_from_runny
 757884495d9af78c4d52735275cbc0105d3f42a0 data/forge/loot_modifiers/global_loot_modifiers.json
 aa62a19d88666c0121e330d3ad11a3c2d3a2cce5 data/tea_mod_from_runny/loot_modifiers/fresh_tea_leaf_from_grass.json
 6f337b31e04864e3c7f5dc3e3b3178306730587b data/tea_mod_from_runny/loot_modifiers/manganite_from_sus_sand.json

@@ -26,22 +26,19 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
-   private static final List<ItemLike> TEA_STONE_SMELTABLES = List.of(ModItems.TEA_STONE.get(),
-           ModBlock.TEA_STONE_ORE.get());
+   private static final List<ItemLike> TEA_STONE_SMELTABLES = List.of(ModBlock.TEA_STONE_ORE.get());
+   private static final List<ItemLike> TEA_POT_SMELTEBLES = List.of(ModItems.UNFIRED_TEA_POT.get());
 
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
-
-//    public static TagKey<Item>(){
-//        return ItemTags.PLANKS;
-//    }
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
         oreSmelting(pWriter, TEA_STONE_SMELTABLES, RecipeCategory.MISC, ModItems.TEA_STONE.get(), 0.25f,200,"tea-stone");
         oreBlasting(pWriter, TEA_STONE_SMELTABLES, RecipeCategory.MISC, ModItems.TEA_STONE.get(), 0.25f,100,"tea-stone");
 
+        oreSmelting(pWriter, TEA_POT_SMELTEBLES, RecipeCategory.MISC, ModItems.EMPTY_TEA_POT.get(), 0.1f, 200, "empty-tea-pot");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlock.TEA_STONE_BLOCK.get())
                 .pattern("TTT")
@@ -59,28 +56,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.MANGANITE.get()),has(ModItems.MANGANITE.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlock.TEA_LEAVES.get())
-                .pattern("TTT")
-                .pattern("TTT")
-                .pattern("TTT")
-                .define('T', ModItems.FRESH_TEA_LEAF.get())
-                .unlockedBy(getHasName(ModItems.FRESH_TEA_LEAF.get()),has(ModItems.FRESH_TEA_LEAF.get()))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlock.DRY_TEA_LEAVES.get())
-                .pattern("TTT")
-                .pattern("TTT")
-                .pattern("TTT")
-                .define('T', ModItems.DRY_TEA_LEAF.get())
-                .unlockedBy(getHasName(ModItems.DRY_TEA_LEAF.get()),has(ModItems.DRY_TEA_LEAF.get()))
-                .save(pWriter);
-
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.UNFIRED_TEA_POT.get())
                 .pattern("CCC")
                 .pattern("C C")
                 .pattern("CCC")
                 .define('C', Items.CLAY_BALL)
                 .unlockedBy(getHasName(Items.CLAY_BALL),has(Items.CLAY_BALL))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.WATER_TEA_POT.get())
+                .pattern("B#")
+                .define('B', Items.WATER_BUCKET)
+                .define('#', ModItems.EMPTY_TEA_POT.get())
+                .unlockedBy(getHasName(ModItems.EMPTY_TEA_POT.get()),has(ModItems.EMPTY_TEA_POT.get()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TEA_POT_CLASSIC_TEA.get())
@@ -257,56 +245,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlock.TEA_TREE_PLANKS.get()), has(ModBlock.TEA_TREE_PLANKS.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MANGANITE_SWORD.get())
-                .pattern("#")
-                .pattern("#")
-                .pattern("/")
-                .define('#', ModItems.MANGANITE.get())
-                .define('/', Items.STICK)
-                .unlockedBy(getHasName(ModItems.MANGANITE.get()), has(ModItems.MANGANITE.get()))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MANGANITE_AXE.get())
-                .pattern("##")
-                .pattern("#/")
-                .pattern(" /")
-                .define('#', ModItems.MANGANITE.get())
-                .define('/', Items.STICK)
-                .unlockedBy(getHasName(ModItems.MANGANITE.get()), has(ModItems.MANGANITE.get()))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MANGANITE_PICKAXE.get())
-                .pattern("###")
-                .pattern(" / ")
-                .pattern(" / ")
-                .define('#', ModItems.MANGANITE.get())
-                .define('/', Items.STICK)
-                .unlockedBy(getHasName(ModItems.MANGANITE.get()), has(ModItems.MANGANITE.get()))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MANGANITE_SHOVEL.get())
-                .pattern("#")
-                .pattern("/")
-                .pattern("/")
-                .define('#', ModItems.MANGANITE.get())
-                .define('/', Items.STICK)
-                .unlockedBy(getHasName(ModItems.MANGANITE.get()), has(ModItems.MANGANITE.get()))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MANGANITE_HOE.get())
-                .pattern("##")
-                .pattern("/ ")
-                .pattern("/ ")
-                .define('#', ModItems.MANGANITE.get())
-                .define('/', Items.STICK)
-                .unlockedBy(getHasName(ModItems.MANGANITE.get()), has(ModItems.MANGANITE.get()))
-                .save(pWriter);
-
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.WOODEN_TEA_CUTTER.get())
                 .pattern("#/")
                 .pattern("#/")
                 .pattern("#/")
-                .define('#', ModBlock.TEA_TREE_PLANKS.get())
+                .define('#', ItemTags.PLANKS)
                 .define('/', Items.STICK)
                 .unlockedBy(getHasName(Items.STICK), has(Items.STICK))
                 .save(pWriter);
@@ -363,19 +306,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlock.TEA_STONE_BLOCK.get()), has(ModBlock.TEA_STONE_BLOCK.get()))
                 .save(pWriter);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MANGANITE.get(), 9)
+                .requires(ModBlock.MANGANITE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlock.MANGANITE_BLOCK.get()), has(ModBlock.MANGANITE_BLOCK.get()))
+                .save(pWriter);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlock.TEA_BUTTON.get())
                 .requires(ModBlock.TEA_TREE_PLANKS.get())
                 .unlockedBy(getHasName(ModBlock.TEA_TREE_PLANKS.get()), has(ModBlock.TEA_TREE_PLANKS.get()))
                 .save(pWriter);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.DRY_TEA_LEAF.get(), 9)
-                .requires(ModBlock.DRY_TEA_LEAVES.get())
-                .unlockedBy(getHasName(ModBlock.DRY_TEA_LEAVES.get()), has(ModBlock.DRY_TEA_LEAVES.get()))
-                .save(pWriter);
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MANGANITE.get(), 9)
-                .requires(ModBlock.MANGANITE_BLOCK.get())
-                .unlockedBy(getHasName(ModBlock.MANGANITE_BLOCK.get()), has(ModBlock.MANGANITE_BLOCK.get()))
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TEA_SEEDS.get())
+                .requires(ModItems.FRESH_TEA_LEAF.get())
+                .unlockedBy(getHasName(ModItems.FRESH_TEA_LEAF.get()), has(ModItems.FRESH_TEA_LEAF.get()))
                 .save(pWriter);
     }
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

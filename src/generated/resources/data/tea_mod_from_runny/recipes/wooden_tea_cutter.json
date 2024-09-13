@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "tea_mod_from_runny:tea_tree_planks"
+      "tag": "minecraft:planks"
     },
     "/": {
       "item": "minecraft:stick"

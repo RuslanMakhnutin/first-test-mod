@@ -3,19 +3,17 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "tea_mod_from_runny:manganite"
+      "item": "tea_mod_from_runny:empty_tea_pot"
     },
-    "/": {
-      "item": "minecraft:stick"
+    "B": {
+      "item": "minecraft:water_bucket"
     }
   },
   "pattern": [
-    "#",
-    "/",
-    "/"
+    "B#"
   ],
   "result": {
-    "item": "tea_mod_from_runny:manganite_shovel"
+    "item": "tea_mod_from_runny:water_tea_pot"
   },
   "show_notification": true
 }

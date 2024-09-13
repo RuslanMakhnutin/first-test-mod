@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_manganite": {
+    "has_empty_tea_pot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "tea_mod_from_runny:manganite"
+              "tea_mod_from_runny:empty_tea_pot"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "tea_mod_from_runny:manganite_hoe"
+        "recipe": "tea_mod_from_runny:water_tea_pot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_manganite",
+      "has_empty_tea_pot",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "tea_mod_from_runny:manganite_hoe"
+      "tea_mod_from_runny:water_tea_pot"
     ]
   },
   "sends_telemetry_event": false

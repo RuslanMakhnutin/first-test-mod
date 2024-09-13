@@ -37,7 +37,7 @@
   "block.tea_mod_from_runny.tea_slag_block": "Tea-slag block",
   "block.tea_mod_from_runny.manganite_block": "Manganite block",
 
-  "block.tea_mod_from_runny.tea_stone_ore": "Tea-stone pre",
+  "block.tea_mod_from_runny.tea_stone_ore": "Tea-stone ore",
   "block.tea_mod_from_runny.stone_manganite_ore": "Manganite ore",
   "block.tea_mod_from_runny.deepslate_manganite_ore": "Deepslate manganite ore",
   "block.tea_mod_from_runny.netherrack_manganite_ore": "Nether manganite ore",
@@ -52,6 +52,7 @@
   "block.tea_mod_from_runny.tea_wood_wall": "Wall of tea wood",
   "block.tea_mod_from_runny.tea_planks_slab": "Tea slab",
   "block.tea_mod_from_runny.tea_pressure_plate": "Tea pressure plate",
+  "block.tea_mod_from_runny.tea_dryer": "Tea dryer",
 
   "item.tea_mod_from_runny.wooden_tea_cutter": "Wooden tea-cutter",
   "item.tea_mod_from_runny.stone_tea_cutter": "Stone tea-cutter",

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "empty-tea-pot",
+  "ingredient": {
+    "item": "tea_mod_from_runny:unfired_tea_pot"
+  },
+  "result": "tea_mod_from_runny:empty_tea_pot"
+}
